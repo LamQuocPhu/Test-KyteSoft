@@ -1,0 +1,32 @@
+.wrapper {
+  box-sizing: border-box;
+  max-width: 1440px;
+
+}
+.container {
+  position: relative;
+  width: 1250px;
+}
+/* background-img */
+.img-bg {
+  margin-top: 0px;
+  width: 1440px;
+  background-image: url(/public/images/bg-img.png);
+  background-position: center center;
+  height: 740px;
+  z-index: -1;
+}
+
+/* Header */
+.header {
+ width: inherit;
+ position: relative;
+ top: 26px;
+}
+
+.header-logo a img{
+position: absolute;
+}
+
+.header-nav {
+}

@@ -1,0 +1,15 @@
+.wrapper {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0 auto;
+  position: relative;
+  width: 1440px;
+}
+
+.img-bg {
+  po
+  background-image: url(/public/images/bg-img.png);
+  z-index: -1;
+  width: 1440px;
+  height: 740px;
+}

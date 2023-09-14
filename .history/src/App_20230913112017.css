@@ -1,0 +1,14 @@
+body {
+  background-color: #fff;
+  padding: 0;
+  margin: 0;
+  color: ;
+}
+
+@media only screen and (max-width: 767px) {
+  body {
+    font-size: 13px;
+  font-family: 'Poppins', sans-serif, 'Work Sans';
+
+  }
+}

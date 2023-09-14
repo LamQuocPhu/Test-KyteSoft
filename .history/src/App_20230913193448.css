@@ -1,0 +1,41 @@
+.wrapper {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0 auto;
+  width: 1440px;
+}
+
+.img-bg {
+  margin-top: 0px;
+  width: 1440px;
+}
+.img-bg div {
+  background-image: url(/public/images/bg-img.png);
+  background-position: center center;
+  height: 740px;
+  z-index: -1;
+}
+
+/* Header */
+.header{
+  position: relative;
+  width: 100%px;
+}
+.header-logo{
+
+}
+.logo{
+
+}
+.header-nav{
+
+}
+.header-nav-list{
+
+}
+.header-nav-item{
+
+}
+.header-nav-link{
+
+}

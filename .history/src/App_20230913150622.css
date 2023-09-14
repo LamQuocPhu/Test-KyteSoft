@@ -1,0 +1,16 @@
+@media only screen and (max-width: 767px) {
+  body {
+    font-size: 13px;
+    font-family: "Poppins", sans-serif, "Work Sans";
+  }
+}
+
+.wrapper {
+  position: relative;
+  width: 1440px;
+}
+
+.standard-header {
+  position: absolute;
+}
+img-bg

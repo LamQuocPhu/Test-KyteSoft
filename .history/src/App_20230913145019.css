@@ -1,0 +1,15 @@
+@media only screen and (max-width: 767px) {
+  body {
+    font-size: 13px;
+    font-family: "Poppins", sans-serif, "Work Sans";
+  }
+}
+
+.wrapper {
+  width: 1440px;
+}
+
+.standard-header {
+  font-family: "Poppins", sans-serif;
+  background-image: 'url(i';
+}

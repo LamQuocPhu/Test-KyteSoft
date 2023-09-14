@@ -1,0 +1,9 @@
+.wrapper {
+  width: 1440px;
+}
+
+.img-bg {
+  position: absolute;
+  z-index: -1;
+  width: 1440px;
+}

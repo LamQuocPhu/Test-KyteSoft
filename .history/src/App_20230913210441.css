@@ -1,0 +1,22 @@
+/* background-img */
+.img-bg {
+  margin-top: 0px;
+  width: 1440px;
+  background-image: url(/public/images/bg-img.png);
+  background-position: center center;
+  height: 740px;
+}
+
+/* Header */
+.header {
+  position: relative;
+  width: 1250px;
+}
+
+.header-logo a img{
+  position: absolute;
+  top: 26px;
+}
+
+.header-nav {
+}

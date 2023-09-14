@@ -1,0 +1,52 @@
+@media only screen and (min-width: 960px) {
+  .header-nav {
+    transition: opacity 0.5s;
+  }
+}
+
+.wrapper {
+  width: 1440px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  font-size: 13px;
+  font-family: "Poppins", sans-serif, "Work Sans";
+}
+
+.wrapper-header {
+  position: relative;
+  max-width: 1440px;
+}
+
+.img-bg img {
+  width: 100%;
+  height: 740px;
+}
+
+.header {
+  max-width: 1245px;
+  padding: 10px 95px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-logo{
+  position: absolute;
+  top: 26px;
+}
+
+
+
+.header-nav {
+  position: absolute;
+  top: 10px;
+
+}
+
+.header-nav-list {
+  list-style: none;
+}
+
+.header-nav-item {
+  display: inline-block;
+}
