@@ -1,7 +1,7 @@
 import Header from "./components/Header";
 // import HeaderImg from "./components/HeaderImg";
 import Features from "./components/Features";
-import "./App.css";
+import "./App.scss";
 
 function App() {
   return (

@@ -6,7 +6,7 @@
 .img-bg {
   margin-top: 0px;
   width: 1440px;
-  background-image: url(/public/images/bg-img.png);
+  background-image: url('../public/images/bg-img.png');
   background-position: center center;
   height: 640px;
 }
@@ -214,7 +214,7 @@ opacity: 0.8;
 
 .destination-grid-item2 a {
   position: relative;
-  
+
 }
 
 .destination-grid-img2{
@@ -241,7 +241,7 @@ opacity: 0.8;
   margin: 0;
   padding: 5px 15px 15px 15px;
   text-align: left;
-  
+
 }
 .review{
   /* float: left; */
