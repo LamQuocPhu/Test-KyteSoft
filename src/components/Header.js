@@ -1,4 +1,5 @@
 import React from "react";
+import '../styles/Header.scss';
 
 export default function Header() {
   return (
@@ -63,7 +64,7 @@ export default function Header() {
             </li>
           </ul>
         </nav>
-        
+
       </header>
       <div className="center-wrapper">
           <div className="inner-content">
