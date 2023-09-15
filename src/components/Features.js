@@ -5,7 +5,7 @@ export default function Features() {
     <section>
         <div className="feature1">
         <div className="standard-wrapper">
-            <div className="featuer1-content">
+            <div className="featuer1-content whychooseus">
             <h2>Popular Destinations</h2>
             <div className="standard-wrapper-tagline-feature1">
                 World's best tourist destinations
@@ -33,7 +33,7 @@ export default function Features() {
         </div>
         <div className="feature1">
         <div className="standard-wrapper">
-            <div className="featuer1-content">
+            <div className="featuer1-content whychooseus">
             <h2>Best Value Trips</h2>
             <div className="standard-wrapper-tagline-feature1">
                 Best offers trips from us
@@ -43,7 +43,7 @@ export default function Features() {
         <div className="destination-grid2">
             <div className="destination-grid-item2">
                 <a href="#">
-                    <img src="https://themes-themegoods.b-cdn.net/grandtour/demo/wp-content/uploads/2016/12/bf1202aedf2c5b6a57d379575619a488-700x466.jpg" alt="" className="destination-grid-img2"/>
+                    <img src="https://themes-themegoods.b-cdn.net/grandtour/demo/wp-content/uploads/2016/12/pexels-photo-211051-700x466.jpeg" alt="" className="destination-grid-img2"/>
                     <div className="tour-price">$5,000</div>
                 </a>
                 
@@ -70,12 +70,63 @@ export default function Features() {
                 </div>
             </div>
             <div className="destination-grid-item2">
-                <img src="https://themes-themegoods.b-cdn.net/grandtour/demo/wp-content/uploads/2016/12/1600x1200-4-700x466.jpg" alt="" className="destination-grid-img2"/>
-
+                <a href="#">
+                    <img src="https://themes-themegoods.b-cdn.net/grandtour/demo/wp-content/uploads/2016/12/pexels-photo-197657-700x466.jpeg" alt="" className="destination-grid-img2"/>
+                    <div className="tour-price">$6,000</div>
+                </a>
+                
+                <div className="portfolio">
+                    <h4>Grand Switzerland</h4>
+                    <p>Shopping, Mountain, Snow & Ice</p>
+                    <div className="review">
+                        <div className="rate">
+                            <span><ion-icon name="star"></ion-icon></span>
+                            <span><ion-icon name="star"></ion-icon></span>
+                            <span><ion-icon name="star"></ion-icon></span>
+                            <span><ion-icon name="star"></ion-icon></span>
+                            <span><ion-icon name="star-outline"></ion-icon></span>
+                            <div className="count-review">
+                                4 reivews
+                            </div>
+                        </div>
+                        
+                        <div className="tour-days">
+                            <ion-icon name="time-outline"></ion-icon>
+                            6 days
+                        </div>
+                    </div>
+                </div>
             </div>
             <div className="destination-grid-item2">
-                <img src="https://themes-themegoods.b-cdn.net/grandtour/demo/wp-content/uploads/2016/12/pexels-photo-1-700x466.jpg" alt="" className="destination-grid-img2"/>
-
+                <a href="#">
+                    <img src="https://themes-themegoods.b-cdn.net/grandtour/demo/wp-content/uploads/2016/12/pexels-photo-96420-700x466.jpeg" alt="" className="destination-grid-img2"/>
+                    <div className="tour-price" style={{width: '140px'}}>
+                        <span style={{textDecoration: 'line-through', opacity: '0.3', paddingRight: '5px'}}>$3,000</span>
+                        $2,500
+                    </div>
+                </a>
+                
+                <div className="portfolio">
+                    <h4>Discover Japan</h4>
+                    <p>City Tours, Iconic</p>
+                    <div className="review">
+                        <div className="rate">
+                            <span><ion-icon name="star"></ion-icon></span>
+                            <span><ion-icon name="star"></ion-icon></span>
+                            <span><ion-icon name="star"></ion-icon></span>
+                            <span><ion-icon name="star"></ion-icon></span>
+                            <span><ion-icon name="star-outline"></ion-icon></span>
+                            <div className="count-review">
+                                4 reivews
+                            </div>
+                        </div>
+                        
+                        <div className="tour-days">
+                            <ion-icon name="time-outline"></ion-icon>
+                            5 days
+                        </div>
+                    </div>
+                </div>
             </div>
         </div> 
         </div>
@@ -90,18 +141,18 @@ export default function Features() {
                 <p>Lorem ipsum dolor sit amet, consect adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa</p>
             </div>
             <div className="layout-item">
-                <img src="https://themes-themegoods.b-cdn.net/grandtour/demo/wp-content/uploads/2016/12/Map-Marker-300x300.png" alt="" className="layout-img"/>
-                <h4><strong>Handpicked Hotels</strong></h4>
+                <img src="https://themes-themegoods.b-cdn.net/grandtour/demo/wp-content/uploads/2016/12/Worldwide-Location-300x300.png" alt="" className="layout-img"/>
+                <h4><strong>World Class Service</strong></h4>
                 <p>Lorem ipsum dolor sit amet, consect adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa</p>
             </div>
             <div className="layout-item">
-                <img src="https://themes-themegoods.b-cdn.net/grandtour/demo/wp-content/uploads/2016/12/Map-Marker-300x300.png" alt="" className="layout-img"/>
-                <h4><strong>Handpicked Hotels</strong></h4>
+                <img src="https://themes-themegoods.b-cdn.net/grandtour/demo/wp-content/uploads/2016/12/Hot-Air-Balloon-300x300.png" alt="" className="layout-img"/>
+                <h4><strong>Best Price Guarantee</strong></h4>
                 <p>Lorem ipsum dolor sit amet, consect adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa</p>
             </div>
         </div>
-        <div>
-            <img src="https://themes-themegoods.b-cdn.net/grandtour/demo/wp-content/uploads/2016/12/pexels-photo-24377.jpg" alt="" style={{width: '100%', height: '60vh', backgroundPosition: '50% 50%', backgroundSize: 'cover', fontSize: '15px', lineHeight: '25.5px'}}/>
+        <div className="bridge">
+            <img src="https://themes-themegoods.b-cdn.net/grandtour/demo/wp-content/uploads/2016/12/pexels-photo-24377.jpg" alt=""/>
         </div>
         <div className="whychooseus">
             <h2>Articles & Tips</h2>

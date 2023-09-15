@@ -1,15 +1,17 @@
-import Header from "./components/Header";
-// import HeaderImg from "./components/HeaderImg";
 import Features from "./components/Features";
-import "./App.scss";
+import Header from "./components/Header";
+import PopularDestinations from "./components/PopularDestinations";
+import "./styles/App.scss";
 
 function App() {
   return (
-      <div className="wrapper">
-        <Header></Header>
+    <>
+      <Header></Header>
+      <div className="app-container">
+        {/* <PopularDestinations></PopularDestinations> */}
         <Features></Features>
-        
       </div>
+    </>
   );
 }
 
