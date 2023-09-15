@@ -79,26 +79,65 @@ export default function Features() {
             </div>
         </div> 
         </div>
-        <div className="feature1">
-        <div className="standard-wrapper">
-            <div className="featuer1-content">
+        <div className="whychooseus">
             <h2>Why Choose Us</h2>
-            <div className="standard-wrapper-tagline-feature1">
-            Here are reasons you should plan trip with us
+            <div>Here are reasons you should plan trip with us</div>
+        </div>
+        <div className="layout">
+            <div className="layout-item">
+                <img src="https://themes-themegoods.b-cdn.net/grandtour/demo/wp-content/uploads/2016/12/Map-Marker-300x300.png" alt="" className="layout-img"/>
+                <h4><strong>Handpicked Hotels</strong></h4>
+                <p>Lorem ipsum dolor sit amet, consect adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa</p>
             </div>
+            <div className="layout-item">
+                <img src="https://themes-themegoods.b-cdn.net/grandtour/demo/wp-content/uploads/2016/12/Map-Marker-300x300.png" alt="" className="layout-img"/>
+                <h4><strong>Handpicked Hotels</strong></h4>
+                <p>Lorem ipsum dolor sit amet, consect adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa</p>
+            </div>
+            <div className="layout-item">
+                <img src="https://themes-themegoods.b-cdn.net/grandtour/demo/wp-content/uploads/2016/12/Map-Marker-300x300.png" alt="" className="layout-img"/>
+                <h4><strong>Handpicked Hotels</strong></h4>
+                <p>Lorem ipsum dolor sit amet, consect adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa</p>
             </div>
         </div>
-        <div className="destination-grid3">
-            <div className="destination-grid-item3">
-                <div>
-                    <img src="https://themes-themegoods.b-cdn.net/grandtour/demo/wp-content/uploads/2016/12/Map-Marker-300x300.png" alt="" className="destination-grid-img3"/>
-                </div>
+        <div>
+            <img src="https://themes-themegoods.b-cdn.net/grandtour/demo/wp-content/uploads/2016/12/pexels-photo-24377.jpg" alt="" style={{width: '100%', height: '60vh', backgroundPosition: '50% 50%', backgroundSize: 'cover', fontSize: '15px', lineHeight: '25.5px'}}/>
+        </div>
+        <div className="whychooseus">
+            <h2>Articles & Tips</h2>
+            <div>Explore some of the best tips from around the world</div>
+        </div>
+        <div className="layout">
+            <div className="layout-item2">
+                <img src="https://themes-themegoods.b-cdn.net/grandtour/demo/wp-content/uploads/2016/12/Map-Marker-300x300.png" alt="" className="layout-img2"/>
                 <h4><strong>Handpicked Hotels</strong></h4>
-                <p>
-                Lorem ipsum dolor sit amet, consect adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa
-                </p>
+                <p>Lorem ipsum dolor sit amet, consect adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa</p>
             </div>
-        </div> 
+            <div className="layout-item2">
+                <img src="https://themes-themegoods.b-cdn.net/grandtour/demo/wp-content/uploads/2016/12/Map-Marker-300x300.png" alt="" className="layout-img2"/>
+                <h4><strong>Handpicked Hotels</strong></h4>
+                <p>Lorem ipsum dolor sit amet, consect adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa</p>
+            </div>
+            <div className="layout-item2">
+                <img src="https://themes-themegoods.b-cdn.net/grandtour/demo/wp-content/uploads/2016/12/Map-Marker-300x300.png" alt="" className="layout-img2"/>
+                <div className="trip-details">
+                    <div>
+                        <a href="#">December 10, 2016</a>
+                    </div>
+                    <h6>
+                        <a href="#">Memorial Day to Someone Told Me to Travel</a>
+                    </h6>
+                    <p>
+                        Meh synth Schlitz, tempor duis single-origin coffee ea next level ethnic fingerstache...
+                    </p>
+                    <div>
+                        <a href="#">Read More</a>
+                        <ion-icon name="chevron-forward-outline"></ion-icon>
+                    </div>
+                    
+                </div>
+            </div>
+            
         </div>
     </section>
   );

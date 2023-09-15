@@ -259,20 +259,21 @@ opacity: 0.8;
 .tour-days{
 }
 
-.destination-grid3{
+.layout{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
   width: 1250px;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
   margin: 0 auto;
 }
-.destination-grid-item3{
-  width: 100%;
+.layout-item{
+  width: 382px;
   height: 322px;
+  margin: 0 49.8px 70px 0;
 }
 
-.destination-grid-item3 h4 {
-  width: 100%;
-  margin: 0 auto;
+.layout-item h4 strong{
   font-family: 'Poppins', sans-serif;
   font-size: 20px;
   font-weight: 700;
@@ -280,11 +281,67 @@ opacity: 0.8;
   text-align: center;
 }
 
-.destination-grid-item3 p {
-  width: 100%;
+.layout-item p {
+  color: #222222;
+  font-family: 'Poppins', sans-serif;
+  font-size: 15px;
+  line-height: 25.5px;
+  padding: 10.5px 0 19.5px;
+  text-align: center;
+  margin: 0;
 }
 
-.destination-grid-img3{
+.layout-img {
   width: 150px;
   height: 150px;
+}
+
+.whychooseus {
+  display: block;
+  text-align: center;
+}
+
+.layout-item2{
+  width: 392.2px;
+  height: 502.7px;
+}
+.layout-img2{
+  width: 392.2px;
+  height: 260px;
+}
+
+.trip-details{
+  padding: 0 30px;
+  text-align: left;
+}
+.trip-details a{
+  text-decoration: none;
+color: #060606;
+  
+}
+.trip-details h6 a {
+  font-family: 'Poppins', sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 28px;
+  color: #000000;
+}
+.trip-details p{
+color: #222222;
+}
+
+.trip-details a{
+  color: #090909;
+  }
+
+.trip-details div {
+
+}
+
+.trip-details div a {
+  font-family: 'Poppins', sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 20.4px;
+  text-transform: uppercase;
 }
