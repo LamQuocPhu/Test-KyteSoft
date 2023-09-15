@@ -25,6 +25,12 @@
   display: inline-block;
 }
 
+.header-menu-item button {
+  background: none;
+  border: 0;
+  font-size: 15px;
+}
+
 .header-menu-item a {
   text-decoration: none;
   color: black;
@@ -39,4 +45,21 @@
 
 .header-menu-item a .ion-icon {
   color: red;
+}
+
+.search-btn {
+  background-color: #ff4a52;
+  border-radius: 5px;
+  border: 0;
+  color: #fff;
+  font-family: 'Work Sans', Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  font-style: normal;
+  line-height: 1.5;
+  padding: 9px 22px;
+  text-align: center;
+  width: 238px;
+  // height: 23px;
+  box-sizing: border-box;
+  cursor: pointer;
 }

@@ -53,9 +53,9 @@ export default function Header() {
               </a>
             </li>
             <li className="header-menu-item">
-              <a href="#">
+              <button>
                 <ion-icon name="menu-outline"></ion-icon>
-              </a>
+              </button>
             </li>
             <li className="header-menu-item">
               <a href="#">
@@ -85,7 +85,8 @@ export default function Header() {
                   <span>
                     <ion-icon name="search-outline"></ion-icon>
                   </span>
-                  <div className="one-fourth themeborder">
+                  <div className="one-fourth
+                  ">
                     <select id="month" name="month">
                       <option>Any Month</option>
                       <option value="january">January</option>
@@ -102,7 +103,7 @@ export default function Header() {
                       <option value="december">December</option>
                     </select>
                   </div>
-                  <div className="one-fourth themeborder">
+                  <div className="one-fourth">
                     <select id="sort-by" name="montsort-byh">
                       <option value="date">Sort By Date</option>
                       <option value="price_low">Price Low to High</option>
@@ -111,13 +112,8 @@ export default function Header() {
                       <option value="popular">Sort By Popularity</option>
                       <option value="review">Sort By Review Score</option>
                     </select>
-                    <div>
-                      <input
-                        id="tour_search_btn"
-                        type="submit"
-                        className="button"
-                        defaultValue="Search"
-                      />
+                    <div className="one-fourth">
+                      <input className="search-btn" type="submit" value="Search"/>
                     </div>
                   </div>
                 </div>
