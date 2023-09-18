@@ -4,36 +4,36 @@ export default function Features() {
   return (
     <section>
         <div className="feature1">
-        <div className="standard-wrapper">
-            <div className="featuer1-content whychooseus">
-            <h2>Popular Destinations</h2>
-            <div className="standard-wrapper-tagline-feature1">
-                World's best tourist destinations
+            <div className="standard-wrapper">
+                <div className="feature1-content whychooseus">
+                <h2>Popular Destinations</h2>
+                <div className="standard-wrapper-tagline-feature1">
+                    World's best tourist destinations
+                </div>
+                </div>
             </div>
-            </div>
-        </div>
-        <div className="destination-grid">
-            <div className="destination-grid-item">
-                <img src="https://themes-themegoods.b-cdn.net/grandtour/demo/wp-content/uploads/2016/12/Tokyo_Dollarphotoclub_72848283-copy-700x466.jpg" alt="" className="destination-grid-img"/>
-                <h3>Tokyo</h3>
-            </div>
-            <div className="destination-grid-item">
-                <img src="https://themes-themegoods.b-cdn.net/grandtour/demo/wp-content/uploads/2016/12/bf1202aedf2c5b6a57d379575619a488-700x466.jpg" alt="" className="destination-grid-img"/>
-                <h3>Seoul</h3>
-            </div>
-            <div className="destination-grid-item">
-                <img src="https://themes-themegoods.b-cdn.net/grandtour/demo/wp-content/uploads/2016/12/1600x1200-4-700x466.jpg" alt="" className="destination-grid-img"/>
-                <h3>Paris</h3>
-            </div>
-            <div className="destination-grid-item">
-                <img src="https://themes-themegoods.b-cdn.net/grandtour/demo/wp-content/uploads/2016/12/pexels-photo-1-700x466.jpg" alt="" className="destination-grid-img"/>
-                <h3>London</h3>
-            </div>
-        </div> 
+            <div className="destination-grid">
+                <div className="destination-grid-item">
+                    <img src="https://themes-themegoods.b-cdn.net/grandtour/demo/wp-content/uploads/2016/12/Tokyo_Dollarphotoclub_72848283-copy-700x466.jpg" alt="" className="destination-grid-img"/>
+                    <h3>Tokyo</h3>
+                </div>
+                <div className="destination-grid-item">
+                    <img src="https://themes-themegoods.b-cdn.net/grandtour/demo/wp-content/uploads/2016/12/bf1202aedf2c5b6a57d379575619a488-700x466.jpg" alt="" className="destination-grid-img"/>
+                    <h3>Seoul</h3>
+                </div>
+                <div className="destination-grid-item">
+                    <img src="https://themes-themegoods.b-cdn.net/grandtour/demo/wp-content/uploads/2016/12/1600x1200-4-700x466.jpg" alt="" className="destination-grid-img"/>
+                    <h3>Paris</h3>
+                </div>
+                <div className="destination-grid-item">
+                    <img src="https://themes-themegoods.b-cdn.net/grandtour/demo/wp-content/uploads/2016/12/pexels-photo-1-700x466.jpg" alt="" className="destination-grid-img"/>
+                    <h3>London</h3>
+                </div>
+            </div> 
         </div>
         <div className="feature1">
         <div className="standard-wrapper">
-            <div className="featuer1-content whychooseus">
+            <div className="feature1-content whychooseus">
             <h2>Best Value Trips</h2>
             <div className="standard-wrapper-tagline-feature1">
                 Best offers trips from us
@@ -63,7 +63,7 @@ export default function Features() {
                         </div>
                         
                         <div className="tour-days">
-                            <ion-icon name="time-outline"></ion-icon>
+                            <i className="fa fa-clock-o"></i>
                             5 days
                         </div>
                     </div>
@@ -91,7 +91,7 @@ export default function Features() {
                         </div>
                         
                         <div className="tour-days">
-                            <ion-icon name="time-outline"></ion-icon>
+                            <i className="fa fa-clock-o"></i>
                             6 days
                         </div>
                     </div>
@@ -122,7 +122,7 @@ export default function Features() {
                         </div>
                         
                         <div className="tour-days">
-                            <ion-icon name="time-outline"></ion-icon>
+                            <i className="fa fa-clock-o"></i>
                             5 days
                         </div>
                     </div>
@@ -160,20 +160,10 @@ export default function Features() {
         </div>
         <div className="layout">
             <div className="layout-item2">
-                <img src="https://themes-themegoods.b-cdn.net/grandtour/demo/wp-content/uploads/2016/12/Map-Marker-300x300.png" alt="" className="layout-img2"/>
-                <h4><strong>Handpicked Hotels</strong></h4>
-                <p>Lorem ipsum dolor sit amet, consect adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa</p>
-            </div>
-            <div className="layout-item2">
-                <img src="https://themes-themegoods.b-cdn.net/grandtour/demo/wp-content/uploads/2016/12/Map-Marker-300x300.png" alt="" className="layout-img2"/>
-                <h4><strong>Handpicked Hotels</strong></h4>
-                <p>Lorem ipsum dolor sit amet, consect adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa</p>
-            </div>
-            <div className="layout-item2">
-                <img src="https://themes-themegoods.b-cdn.net/grandtour/demo/wp-content/uploads/2016/12/Map-Marker-300x300.png" alt="" className="layout-img2"/>
+                <img src="https://themes-themegoods.b-cdn.net/grandtour/demo/wp-content/uploads/2016/12/photo-1469920783271-4ee08a94d42d-960x636.jpg" alt="" className="layout-img2"/>
                 <div className="trip-details">
                     <div>
-                        <a href="#">December 10, 2016</a>
+                        <a href="#" >December 10, 2016</a>
                     </div>
                     <h6>
                         <a href="#">Memorial Day to Someone Told Me to Travel</a>
@@ -181,14 +171,51 @@ export default function Features() {
                     <p>
                         Meh synth Schlitz, tempor duis single-origin coffee ea next level ethnic fingerstache...
                     </p>
+                    <div className="read-more">
+                        <a href="#">Read More <ion-icon name="chevron-forward-outline"></ion-icon>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div className="layout-item2">
+                <img src="https://themes-themegoods.b-cdn.net/grandtour/demo/wp-content/uploads/2016/12/pexels-photo-212388-960x636.jpeg" alt="" className="layout-img2"/>
+                
+                <div className="trip-details">
                     <div>
-                        <a href="#">Read More</a>
-                        <ion-icon name="chevron-forward-outline"></ion-icon>
+                        <a href="#" >December 10, 2016</a>
+                    </div>
+                    <h6>
+                        <a href="#">7 Tips For Nomads On A Budget Trips</a>
+                    </h6>
+                    <p>
+                        Meh synth Schlitz, tempor duis single-origin coffee ea next level ethnic fingerstache...
+                    </p>
+                    <div className="read-more">
+                        <a href="#">Read More <ion-icon name="chevron-forward-outline"></ion-icon>
+                        </a>
                     </div>
                     
                 </div>
             </div>
-            
+            <div className="layout-item2">
+                <img src="https://themes-themegoods.b-cdn.net/grandtour/demo/wp-content/uploads/2016/12/pexels-photo-24484-960x636.jpg" alt="" className="layout-img2"/>
+                <div className="trip-details">
+                    <div>
+                        <a href="#" >December 10, 2016</a>
+                    </div>
+                    <h6>
+                        <a href="#">Taking A Travel Blog Victory Lap</a>
+                    </h6>
+                    <p>
+                        Meh synth Schlitz, tempor duis single-origin coffee ea next level ethnic fingerstache...
+                    </p>
+                    <div className="read-more">
+                        <a href="#">Read More <ion-icon name="chevron-forward-outline"></ion-icon>
+                        </a>
+                    </div>
+                    
+                </div>
+            </div>
         </div>
     </section>
   );
