@@ -8,10 +8,10 @@ import "./styles/App.scss";
 function App() {
   return (
     <>
-      <Header></Header>
       {/* <Option></Option> */}
-      <ScrollToTopBtn></ScrollToTopBtn>
+      <Header></Header>
       <div className="app-container">
+      <ScrollToTopBtn></ScrollToTopBtn>
         <Features></Features>
       </div>
       <Footer></Footer>
