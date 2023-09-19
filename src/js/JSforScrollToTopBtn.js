@@ -5,6 +5,7 @@ text-align: center;
 color: #1ec6b6;
 `;
 
+
 export const Content = styled.div`
 overflowY: scroll;
 height: 2500px;

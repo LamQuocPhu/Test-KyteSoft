@@ -535,7 +535,7 @@ export default function Header() {
                       <p className="tour-price">
                         <i>$4,900 </i>$3,900
                       </p>
-                      <h5>Swiss Alps Trip</h5>
+                      <h5>5 Lake Of FujiSan</h5>
                       <span>
                         <i className="fa fa-star"></i>
                         <i className="fa fa-star"></i>

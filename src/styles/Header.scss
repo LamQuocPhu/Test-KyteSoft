@@ -210,8 +210,9 @@ a img {
   top: 10px;
   right: 3px;
   color: #ccc;
-  padding: 0 1px;
+  padding: 0 0.5px;
   background-color: white;
+  font-size: 18px;
 }
 
 #advance-search-positive{
@@ -244,6 +245,7 @@ a img {
   height: 37px;
   border-radius: 5px;
   border: 0;
+  padding-left: 15px;
 }
 
 #destination-input {
@@ -269,6 +271,7 @@ a img {
   border: 0;
   border-radius: 5px;
   font-size: 15px;
+  padding-left: 15px;
 }
 
 #sort-by {
@@ -277,6 +280,7 @@ a img {
   border: 0;
   border-radius: 5px;
   font-size: 15px;
+  padding-left: 15px;
 }
 
 // drop down menu
@@ -588,7 +592,7 @@ a img {
     position: absolute;
     top: 130px;
     left: 10px;
-    color: black;
+    color: #fff;
     font-size: 18px;
     font-weight: 700;
     letter-spacing: 0;
@@ -608,7 +612,7 @@ a img {
     position: relative;
     border-radius: 5px;
     height: 200px;
-    width: 280px;
+    width: 190px;
   }
 }
 
@@ -627,7 +631,7 @@ a img {
   margin: 20px 0 0 0 ;
   padding: 0;
   background-color: #DFE2E5;
-
+  text-align: center;
   li {
     font-size: 24px;
     line-height: 1;
@@ -636,6 +640,12 @@ a img {
     height: 24px;
   }
   a {
-    padding-right: 18px;
+    padding-right: 15px;
+  }
+}
+
+@include media-breakpoint-down(md){
+  #myBtn{
+    display: none;
   }
 }
