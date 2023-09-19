@@ -43,7 +43,7 @@ export default function Features() {
         <div className="destination-grid2">
             <div className="destination-grid-item2">
                 <a href="#">
-                    <img src="https://themes-themegoods.b-cdn.net/grandtour/demo/wp-content/uploads/2016/12/pexels-photo-211051-700x466.jpeg" alt="" className="destination-grid-img2"/>
+                    <img src="https://themes-themegoods.b-cdn.net/grandtour/demo/wp-content/uploads/2016/12/pexels-photo-211051-700x466.jpeg" alt="" className="destination-grid-img2 hover-shadow"/>
                     <div className="tour-price">$5,000</div>
                 </a>
                 

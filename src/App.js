@@ -8,8 +8,8 @@ import "./styles/App.scss";
 function App() {
   return (
     <>
-      {/* <Option></Option> */}
       <Header></Header>
+      <Option></Option>
       <div className="app-container">
       <ScrollToTopBtn></ScrollToTopBtn>
         <Features></Features>

@@ -6,14 +6,16 @@
 $color-white: #fff;
 
 @include media-breakpoint-down(lg) {
-  nav {
-    display: none;
-  }
   .header {
     .header-logo {
       float: left;
     }
-    .header-nav-menu {float: right;}
+    .header-nav-menu {
+      float: right;
+      // nav {
+      //   display: none;
+      // }
+    }
   }
 }
 
@@ -25,7 +27,7 @@ $color-white: #fff;
     color: black;
     .header-nav-menu {
       float: right;
-      z-index: 100;
+      // z-index: 100;
       }
     }
   }
@@ -33,7 +35,7 @@ $color-white: #fff;
 .img-bg {
   height: 740px;
   margin-top: 0;
-  background-image: url('../../public/images/bg-img.png');
+  background-image: url('../../public/images/bg-imgcopy.png');
   background-position: center center;
 }
 
@@ -60,6 +62,12 @@ $color-white: #fff;
   }
 }
 
+@include media-breakpoint-down(md){
+.header-menu-list {
+  display: none;
+}
+
+}
 .header-logo {
   float: left;
 a img {
@@ -138,8 +146,11 @@ a img {
 }
 
 .tour-search {
-  padding: 20px 20px 0;
-  position: relative;
+  // z-index: -1;
+  @include media-breakpoint-down(md){
+    padding: 20px 20px 0;
+    position: relative;
+  }
 }
 
 .tour-search-wrapper {
@@ -152,29 +163,60 @@ a img {
   }
   input {
     position: relative;
-    padding-left: 20px;
   }
   #destination-search {
     position: absolute;
     top: 0;
-  }
-  svg {
-    position: absolute;
+    color: #ccc;
   }
 }
 
-.one-fourth {
-  display: inline-block;
-  margin-right: 24px;
-  select {
-    color: #555;
+@include media-breakpoint-up(md){
+  .one-fourth {
+    display: inline-block;
+    margin-right: 24px;
+    select {
+      color: #555;
+    }
   }
+}
+
+@include media-breakpoint-down(md){
+  .one-fourth{
+    select {
+      color: #555;
+    }
+  }
+}
+
+//select month-sortByDay icon
+#calendar-relative {
+  position: relative;
+}
+#calendar-absolute {
+  position: absolute;
+  top: 10px;
+  right: 3px;
+  color: #ccc;
+  padding: 0 5px;
+  background-color: white;
+}
+
+#sortbyday-relative {
+  position: relative;
+}
+#sortbyday-absolute {
+  position: absolute;
+  top: 10px;
+  right: 3px;
+  color: #ccc;
+  padding: 0 1px;
+  background-color: white;
 }
 
 #advance-search-positive{
   position: relative;
 }
-
 .tour-search-advance{
   text-decoration: none;
   @include media-breakpoint-down(md){
@@ -256,7 +298,7 @@ a img {
   width: 250px;
   padding-left: 20px;
   padding-right: 10px;
-  z-index: 1;
+  // z-index: 1;
 }
 
 .content_dropdown a {
@@ -410,7 +452,6 @@ a img {
 
 .standard-wrapper {
   margin: 0 auto;
-
 }
 
 .standard-wrapper-title {
@@ -418,7 +459,6 @@ a img {
     font-size: 24px;
     margin: 10px 0 0;
     padding-inline: 10px;
-
   }
   font-family: 'Poppins', sans-serif;
   font-size: 36px;
@@ -434,15 +474,18 @@ a img {
   @include media-breakpoint-down(md){
     font-size: 16px;
     padding-inline: 10px;
-
+    opacity: 1;
   }
-  color: $color-white;
+  @include media-breakpoint-up(md){
+    opacity: 0.8;
+    margin-bottom: 10px;
+  }
+  color: #ccc;
   font-weight: 500;
   font-size: 15px;
   line-height: 1.7;
   text-align: center;
   display: inline-block;
-  opacity: 0.8;
 }
 
 .one-fourth div {
@@ -593,7 +636,6 @@ a img {
     height: 24px;
   }
   a {
-    padding-right: 20px;
-
+    padding-right: 18px;
   }
 }

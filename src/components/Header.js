@@ -459,61 +459,112 @@ export default function Header() {
           {/* menu-sidebar */}
           <div className="header-nav-mobile">
             <span className="header-menu-item">
-              <button className="fa fa-bars" type="button" data-bs-toggle="offcanvas"      data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"></button>
+              <button
+                className="fa fa-bars"
+                type="button"
+                data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasRight"
+                aria-controls="offcanvasRight"
+              ></button>
             </span>
-            <div className="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+            <div
+              className="offcanvas offcanvas-end"
+              tabindex="-1"
+              id="offcanvasRight"
+              aria-labelledby="offcanvasRightLabel"
+            >
               <div className="offcanvas-body">
-                <button type="button" id="btn-close" data-bs-dismiss="offcanvas" aria-label="Close">X
+                <button
+                  type="button"
+                  id="btn-close"
+                  data-bs-dismiss="offcanvas"
+                  aria-label="Close"
+                >
+                  X
                 </button>
-                  <nav className="bm-item-list">
-                    <a href="#" className="bm-item">Home</a>
-                    <a href="#" className="bm-item">Tours</a>
-                    <a href="#" className="bm-item">Booking</a>
-                    <a href="#" className="bm-item">Destinations</a>
-                    <a href="#" className="bm-item">Pages</a>
-                    <a href="#" className="bm-item">Blog</a>
-                    <a href="#" className="bm-item">Shortcodes</a>
-                    <a href="#" className="bm-item">Shop</a>
-                  </nav>
-                  <div className="menu-sidebar-img">
-                    <div id="sidebar-img" className="SwissApls-tour">
-                      <img src="https://images.unsplash.com/photo-1454496522488-7a8e488e8606?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bW91bnRhaW58ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=800&q=60" alt="Swiss Alps trips" />
-                      <div className="Tour-Info">
-                        <p>$3,900</p>
-                        <h5>Swiss Alps Trip</h5>
-                        <span>
-                          <i className="fa fa-star"></i>
-                          <i className="fa fa-star"></i>
-                          <i className="fa fa-star"></i>
-                          <i className="fa fa-star"></i>
-                          <i className="fa fa-star-o"></i>
-                        </span>
-                      </div>
-                    </div>
-                    <div id="sidebar-img" className="FujiSan-tour">
-                      <img src="https://images.unsplash.com/photo-1454496522488-7a8e488e8606?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bW91bnRhaW58ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=800&q=60" alt="Swiss Alps trips" />
-                      <div className="Tour-Info">
-                        <p className="tour-price"><i>$4,900 </i>$3,900</p>
-                        <h5>Swiss Alps Trip</h5>
-                        <span>
-                          <i className="fa fa-star"></i>
-                          <i className="fa fa-star"></i>
-                          <i className="fa fa-star"></i>
-                          <i className="fa fa-star"></i>
-                          <i className="fa fa-star-o"></i>
-                        </span>
-                      </div>
+                <nav className="bm-item-list">
+                  <a href="#" className="bm-item">
+                    Home
+                  </a>
+                  <a href="#" className="bm-item">
+                    Tours
+                  </a>
+                  <a href="#" className="bm-item">
+                    Booking
+                  </a>
+                  <a href="#" className="bm-item">
+                    Destinations
+                  </a>
+                  <a href="#" className="bm-item">
+                    Pages
+                  </a>
+                  <a href="#" className="bm-item">
+                    Blog
+                  </a>
+                  <a href="#" className="bm-item">
+                    Shortcodes
+                  </a>
+                  <a href="#" className="bm-item">
+                    Shop
+                  </a>
+                </nav>
+                <div className="menu-sidebar-img">
+                  <div id="sidebar-img" className="SwissApls-tour">
+                    <img
+                      src="https://images.unsplash.com/photo-1454496522488-7a8e488e8606?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bW91bnRhaW58ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=800&q=60"
+                      alt="Swiss Alps trips"
+                    />
+                    <div className="Tour-Info">
+                      <p>$3,900</p>
+                      <h5>Swiss Alps Trip</h5>
+                      <span>
+                        <i className="fa fa-star"></i>
+                        <i className="fa fa-star"></i>
+                        <i className="fa fa-star"></i>
+                        <i className="fa fa-star"></i>
+                        <i className="fa fa-star-o"></i>
+                      </span>
                     </div>
                   </div>
-                  <ul className="mobile-social-media">
-                    <a href="#"><li className="fa fa-facebook-official"></li></a>
-                    <a href="#"><li className="fa fa-twitter"></li></a>
-                    <a href="#"><li className="fa fa-youtube"></li></a>
-                    <a href="#"><li className="fa fa-pinterest"></li></a>
-                    <a href="#"><li className="fa fa-instagram"></li></a>
-                  </ul>
+                  <div id="sidebar-img" className="FujiSan-tour">
+                    <img
+                      src="https://images.unsplash.com/photo-1454496522488-7a8e488e8606?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bW91bnRhaW58ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=800&q=60"
+                      alt="Swiss Alps trips"
+                    />
+                    <div className="Tour-Info">
+                      <p className="tour-price">
+                        <i>$4,900 </i>$3,900
+                      </p>
+                      <h5>Swiss Alps Trip</h5>
+                      <span>
+                        <i className="fa fa-star"></i>
+                        <i className="fa fa-star"></i>
+                        <i className="fa fa-star"></i>
+                        <i className="fa fa-star"></i>
+                        <i className="fa fa-star-o"></i>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+                <ul className="mobile-social-media">
+                  <a href="#">
+                    <li className="fa fa-facebook-official"></li>
+                  </a>
+                  <a href="#">
+                    <li className="fa fa-twitter"></li>
+                  </a>
+                  <a href="#">
+                    <li className="fa fa-youtube"></li>
+                  </a>
+                  <a href="#">
+                    <li className="fa fa-pinterest"></li>
+                  </a>
+                  <a href="#">
+                    <li className="fa fa-instagram"></li>
+                  </a>
+                </ul>
               </div>
-          </div>
+            </div>
 
             {/* menu-sidebar */}
             <span className="header-menu-item cart-count">
@@ -533,16 +584,20 @@ export default function Header() {
               Trips, experiences, and places. All in one service.
             </div>
             <div className="tour-search">
-              <div  id="advance-search-positive" className="tour-search-wrapper">
+              <div id="advance-search-positive" className="tour-search-wrapper">
                 <div className="one-fourth">
                   <span id="destination-input">
-                    <input className="input-inner" type="text" placeholder="Destination, city"/>
+                    <input
+                      className="input-inner"
+                      type="text"
+                      placeholder="Destination, city"
+                    />
                     <span>
                       <i id="destination-search" className="fa fa-search"></i>
                     </span>
                   </span>
                 </div>
-                <div className="one-fourth">
+                <div id="calendar-relative" className="one-fourth">
                   <select id="month" name="month">
                     <option>Any Month</option>
                     <option value="january">January</option>
@@ -558,8 +613,9 @@ export default function Header() {
                     <option value="november">November</option>
                     <option value="december">December</option>
                   </select>
+                  <i id="calendar-absolute" className="fa fa-calendar-o"></i>
                 </div>
-                <div className="one-fourth">
+                <div className="one-fourth" id="sortbyday-relative">
                   <select id="sort-by" name="montsort-byh">
                     <option value="date">Sort By Date</option>
                     <option value="price_low">Price Low to High</option>
@@ -568,17 +624,20 @@ export default function Header() {
                     <option value="popular">Sort By Popularity</option>
                     <option value="review">Sort By Review Score</option>
                   </select>
+                  <i
+                    id="sortbyday-absolute"
+                    class="fa fa-exchange fa-rotate-90"
+                  ></i>
                 </div>
                 <div className="one-fourth">
-                    <input className="search-btn" type="submit" value="Search"/>
+                  <input className="search-btn" type="submit" value="Search" />
                 </div>
                 <div className="tour-search-advance">
-                    <a href="#" id="advance-search">
-                      <i className="fa fa-angle-down">Advanced Search</i>
-                    </a>
-                  </div>
+                  <a href="#" id="advance-search">
+                    <i className="fa fa-angle-down">Advanced Search</i>
+                  </a>
+                </div>
               </div>
-              
             </div>
           </div>
         </div>
