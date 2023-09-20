@@ -30,7 +30,7 @@ export default function Option() {
             <h6 className="inner-content-title">Predefined Colors</h6>
             <ul className="inner-content-list-color">
               <li>
-                <a href="">
+                <a href="#">
                   <div
                     className="circle"
                     style={{ backgroundColor: "#FF4A52" }}
@@ -38,7 +38,7 @@ export default function Option() {
                 </a>
               </li>
               <li>
-                <a href="">
+                <a href="#">
                   <div
                     className="circle"
                     style={{ backgroundColor: "#FF9500" }}
@@ -46,7 +46,7 @@ export default function Option() {
                 </a>
               </li>
               <li>
-                <a href="">
+                <a href="#">
                   <div
                     className="circle"
                     style={{ backgroundColor: "#FFCC00" }}
@@ -54,7 +54,7 @@ export default function Option() {
                 </a>
               </li>
               <li>
-                <a href="">
+                <a href="#">
                   <div
                     className="circle"
                     style={{ backgroundColor: "#4CD964" }}
@@ -62,7 +62,7 @@ export default function Option() {
                 </a>
               </li>
               <li>
-                <a href="">
+                <a href="#">
                   <div
                     className="circle"
                     style={{ backgroundColor: "#5AC8FA" }}
@@ -70,7 +70,7 @@ export default function Option() {
                 </a>
               </li>
               <li>
-                <a href="">
+                <a href="#">
                   <div
                     className="circle"
                     style={{ backgroundColor: "#007AFF" }}
@@ -78,7 +78,7 @@ export default function Option() {
                 </a>
               </li>
               <li>
-                <a href="">
+                <a href="#">
                   <div
                     className="circle"
                     style={{ backgroundColor: "#5856D6" }}
@@ -86,7 +86,7 @@ export default function Option() {
                 </a>
               </li>
               <li>
-                <a href="">
+                <a href="#">
                   <div
                     className="circle"
                     style={{ backgroundColor: "#FF2D55" }}
@@ -142,10 +142,10 @@ export default function Option() {
       </div>
       <button className="btn" onClick={myFunction} id="myBtn">
         <a href="#" className="option-button">
-          <i className="fa fa-cog"></i>
+          <ion-icon name="settings-outline"></ion-icon>
         </a>
         <a href="#" className="option-button">
-          <i className="fa fa-heart-o"></i>
+          <ion-icon name="heart-outline"></ion-icon>
         </a>
         <a href="#" className="option-button">
           <ion-icon name="book-outline"></ion-icon>

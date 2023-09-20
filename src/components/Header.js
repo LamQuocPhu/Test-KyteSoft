@@ -1,9 +1,11 @@
 import React from "react";
 import "../styles/Header.scss";
+import VideoBg from "./VideoBg";
 
 export default function Header() {
   return (
     <div className="img-bg">
+
       <header className="header">
         <div className="header-logo">
           <a href="#">
@@ -511,7 +513,7 @@ export default function Header() {
                 <div className="menu-sidebar-img">
                   <div id="sidebar-img" className="SwissApls-tour">
                     <img
-                      src="https://images.unsplash.com/photo-1454496522488-7a8e488e8606?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bW91bnRhaW58ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=800&q=60"
+                      src="https://themes-themegoods.b-cdn.net/grandtour/demo/wp-content/uploads/2016/12/pexels-photo-131729-700x466.jpeg"
                       alt="Swiss Alps trips"
                     />
                     <div className="Tour-Info">
@@ -528,12 +530,12 @@ export default function Header() {
                   </div>
                   <div id="sidebar-img" className="FujiSan-tour">
                     <img
-                      src="https://images.unsplash.com/photo-1454496522488-7a8e488e8606?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bW91bnRhaW58ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=800&q=60"
+                      src="https://themes-themegoods.b-cdn.net/grandtour/demo/wp-content/uploads/2016/12/pexels-photo-225630-700x466.jpeg"
                       alt="Swiss Alps trips"
                     />
                     <div className="Tour-Info">
                       <p className="tour-price">
-                        <i>$4,900 </i>$3,900
+                        <i>$4,900 </i>$4,200
                       </p>
                       <h5>5 Lake Of FujiSan</h5>
                       <span>

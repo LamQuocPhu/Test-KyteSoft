@@ -3,12 +3,14 @@ import Footer from "./components/Footer";
 import Header from "./components/Header";
 import Option from "./components/Option";
 import ScrollToTopBtn from "./components/ScrollToTopBtn";
+import VideoBg from "./components/VideoBg";
 import "./styles/App.scss";
 
 function App() {
   return (
     <>
       <Header></Header>
+      {/* <VideoBg></VideoBg> */}
       <Option></Option>
       <div className="app-container">
       <ScrollToTopBtn></ScrollToTopBtn>

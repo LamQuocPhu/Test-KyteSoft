@@ -1,35 +1,35 @@
-import React, {useState} from 'react';
-import {FaArrowCircleUp} from 'react-icons/fa';
-import { Button } from '../js/JSforScrollToTopBtn';
+import React, { useState, useEffect } from "react";
+import { FaArrowCircleUp, FaAngleUp } from "react-icons/fa";
+import "../styles/ScrollToTopBtn.scss";
+import { Button } from "bootstrap";
 
-export default function ScrollButton()  {
-    const [visible, setVisible] = useState(false)
+export default function ScrollButton() {
+  const [visible, setVisible] = useState(false);
 
-    const toggleVisible = () => {
-        const scrolled = document.documentElement.scrollTop;
-        if (scrolled > 300){
-        setVisible(true)
-        }
-        else if (scrolled <= 300){
-        setVisible(false)
-        }
-    };
+  useEffect(() => {
+    window.addEventListener("scroll", () => {
+      if (window.scrollY > 400) {
+        setVisible(true);
+      } else {
+        setVisible(false);
+      }
+    });
+  }, []);
+  const goToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
 
-    const scrollToTop = () =>{
-        window.scrollTo({
-        top: 0,
-        behavior: 'smooth'
-        /* you can also use 'auto' behaviour
-            in place of 'smooth' */
-        });
-    };
-
-    window.addEventListener('scroll', toggleVisible);
-
-    return (
-        <Button>
-        <FaArrowCircleUp onClick={scrollToTop}
-        style={{display: visible ? 'inline' : 'none'}} />
-        </Button>
-    );
+  return (
+    <div className="top-to-btn">
+      {visible && (
+        <button onClick={goToTop} className="icon-position  myStyleBtn">
+        <i className="fa fa-angle-up"></i>
+        </button>
+      )}
+      
+    </div>
+  );
 }
