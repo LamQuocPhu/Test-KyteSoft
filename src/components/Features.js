@@ -105,7 +105,9 @@ export default function Features() {
                         $2,500
                     </div>
                 </a>
-                
+                <div className="sale-label">
+                    Sale
+                </div>
                 <div className="portfolio">
                     <h4>Discover Japan</h4>
                     <p>City Tours, Iconic</p>
@@ -120,11 +122,11 @@ export default function Features() {
                                 4 reivews
                             </div>
                         </div>
-                        
                         <div className="tour-days">
                             <i className="fa fa-clock-o"></i>
                             5 days
                         </div>
+
                     </div>
                 </div>
             </div>

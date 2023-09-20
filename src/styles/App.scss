@@ -171,6 +171,12 @@ $color-manatee: #8d9199;
   border-radius: 5px;
   position: relative;
   .tour-price {
+    @include media-breakpoint-up(md){
+    top: 220px;
+    }
+    @include media-breakpoint-down(md){
+      top: 145px;
+    }
     position: absolute;
     width: 73px;
     height: 31px;
@@ -180,7 +186,20 @@ $color-manatee: #8d9199;
     font-weight: 700;
     line-height: 1.7;
     padding: 3px 10px 2px;
-    top: 145px;
+  }
+  .sale-label{
+    position: absolute;
+    top: -14px;
+    right: -14px;
+    background-color: #1ec7b6;
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+    font-size: 12px;
+    line-height: 1.7;
+    font-weight: 600;
+    padding: 10px 7px;
+    color: $color-white;
   }
 }
 
@@ -212,6 +231,18 @@ $color-manatee: #8d9199;
   margin: 0;
   padding: 5px 15px 15px 15px;
   text-align: left;
+  h4 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1.4;
+  }
+  p {
+    color: #222;
+    font-family: 'Poppins', sans-serif;
+    font-size: 13px;
+    line-height: 1.7;
+  }
 }
 
 .review {

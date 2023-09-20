@@ -1,11 +1,13 @@
 import React from "react";
 import "../styles/Header.scss";
 import VideoBg from "./VideoBg";
+import videobg from '../videos/videobg.mov';
+
 
 export default function Header() {
   return (
     <div className="img-bg">
-
+      <video className="videobg" src={videobg} autoPlay muted loop></video>
       <header className="header">
         <div className="header-logo">
           <a href="#">

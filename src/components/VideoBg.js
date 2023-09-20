@@ -5,7 +5,7 @@ import '../styles/Header.scss';
 
 export default function VideoBg() {
     return (
-        <div className="img-bg">
+        <div>
             <video src={videobg} autoPlay loop muted className="videobg"/>
             <Header></Header>
         </div>
