@@ -321,14 +321,15 @@ $color-manatee: #8d9199;
 
 .whychooseus {
   @include media-breakpoint-down(md) {
-    margin-top: 60px;
-    margin-bottom: 40px;
+    margin-top: 40px;
+    margin-bottom: 30px;
     h2 {
       font-size: 24px;
     }
   }
   @include media-breakpoint-up(md) {
-    margin-block: 40px;
+    margin-top: 60px;
+    margin-bottom: 50px;
     h2 {
       font-size: 36px;
     }
@@ -429,6 +430,20 @@ $color-manatee: #8d9199;
 }
 
 .bridge img {
-  height: 257px;
+  height: 270px;
   width: 100%;
+  object-fit: cover;
+  // overflow: hidden;
+  // background-size: cover;
+  // background-repeat: no-repeat;
+  // background-position: 50% 50%;
 }
+
+// .bridge {
+//   height: 270px;
+//   background-image: url('https://themes-themegoods.b-cdn.net/grandtour/demo/wp-content/uploads/2016/12/pexels-photo-24377.jpg');
+//   overflow: hidden;
+//   background-size: cover;
+//   background-repeat: no-repeat;
+//   background-position: 50% 50%;
+// }

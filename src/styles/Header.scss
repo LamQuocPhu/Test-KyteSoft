@@ -71,22 +71,43 @@ $color-white: #fff;
 .header-menu {
   float: left;
   .header-menu-list {
+    @include media-breakpoint-down(md) {
+      display: none;
+    }
     .header-menu-item {
+      list-style: none;
+      display: inline-block;
       a {
+        text-decoration: none;
+        color: black;
+        padding: 26px 17px 26px 0;
+        margin: 0 5px 0 0;
+        font-family: "Poppins", sans-serif;
+        font-size: 13px;
+        font-weight: 500;
+        line-height: 1.7;
+        text-align: center;
         color: #fff;
         i {
           padding-left: 8px;
+          font-size: 15px;
         }
       }
     }
   }
 }
 
-@include media-breakpoint-down(md) {
-  .header-menu-list {
-    display: none;
+.header-menu-item a {
+  i {
   }
 }
+
+.header-menu-item button {
+  background: none;
+  border: 0;
+  font-size: 15px;
+}
+
 .header-logo {
   float: left;
   a img {
@@ -97,32 +118,6 @@ $color-white: #fff;
     line-height: 0;
     text-align: left;
   }
-}
-
-.header-menu-item {
-  list-style: none;
-  display: inline-block;
-}
-
-.header-menu-item button {
-  background: none;
-  border: 0;
-  font-size: 15px;
-}
-
-.header-menu-item a {
-  i {
-    font-size: 15px;
-  }
-  text-decoration: none;
-  color: black;
-  padding: 26px 17px 26px 0;
-  margin: 0 5px 0 0;
-  font-family: "Poppins", sans-serif;
-  font-size: 13px;
-  font-weight: 500;
-  line-height: 22.1px;
-  text-align: center;
 }
 
 .header-menu-item a .ion-icon {
@@ -154,12 +149,16 @@ $color-white: #fff;
     }
     div {
       position: absolute;
-      top: -13px;
-      right: 5px;
-      width: 20px;
-      height: 20px;
-      background-color: red;
-      border-radius: 10px;
+      top: -8px;
+      right: -3px;
+      width: 16px;
+      height: 16px;
+      background-color: #ff4a52;
+      border-radius: 50px;
+      font-size: 10px;
+      font-weight: 600;
+      line-height: 1.8;
+      text-align: center;
     }
   }
 }
@@ -666,4 +665,3 @@ $color-white: #fff;
 }
 
 // video background
-
