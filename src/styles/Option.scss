@@ -4,6 +4,10 @@
 
 @include media-breakpoint-down(md) {
   .open {
+    display: none; 
+  }
+
+  #myBtn {
     display: none;
   }
 }
@@ -55,14 +59,14 @@
       margin-inline: 0;
     }
     h6 {
-      font-family: "Poppins";
+      font-family: 'Poppins', Arial, Helvetica, sans-serif;
       font-size: 15px;
       font-weight: 600;
       line-height: 1.4;
       margin-block: 30px;
     }
     p {
-      font-family: "Poppins";
+      font-family: 'Poppins', Arial, Helvetica, sans-serif;
       font-size: 12px;
       line-height: 1.5;
       margin: 10px 0 25px 0;
@@ -74,12 +78,7 @@
     padding: 25px 15px 25px;
     box-sizing: border-box;
   }
-  .inner-content {
-  }
-  .inner-content-title {
-  }
-  .inner-content-describre {
-  }
+
   .inner-content-list {
     display: grid;
     place-items: center;

@@ -160,7 +160,7 @@ export default function Features() {
             <h2>Articles & Tips</h2>
             <div>Explore some of the best tips from around the world</div>
         </div>
-        <div className="layout">
+        <div className="layout2">
             <div className="layout-item2">
                 <img src="https://themes-themegoods.b-cdn.net/grandtour/demo/wp-content/uploads/2016/12/photo-1469920783271-4ee08a94d42d-960x636.jpg" alt="" className="layout-img2"/>
                 <div className="trip-details">

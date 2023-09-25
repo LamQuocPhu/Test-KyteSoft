@@ -1,0 +1,364 @@
+@import "node_modules/bootstrap/scss/functions";
+@import "node_modules/bootstrap/scss/variables";
+@import "node_modules/bootstrap/scss/mixins";
+
+.featurearticle-content:hover {
+  background: #fff;
+  box-shadow: 0px 15px 26px #ccc;
+  transform: translateY(-10px);
+  transition: all 0.2s ease-in;
+}
+
+//Mobile
+@include media-breakpoint-down(md) {
+  .featurearticle-wrapper {
+    width: 100%;
+    height: auto;
+  }
+
+  .featurearticle-title {
+    padding-block: 30px;
+    text-align: center;
+    h2 {
+      color: #000;
+      font-family: "Poppins", Arial, Helvetica, sans-serif;
+      font-size: 24px;
+      font-weight: 700;
+      line-height: 1.3;
+      margin: 10px 0 0;
+    }
+    div {
+      color: #8d9199;
+      display: inline-block;
+      font-family: "Poppins", Arial, Helvetica, sans-serif;
+      font-size: 15px;
+      font-weight: 500;
+      line-height: 1.7;
+    }
+  }
+
+  .featurearticle-content-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+  .featurearticle-content {
+    width: 100%;
+    height: auto;
+    border: 1px solid #dce0e0;
+    border-radius: 5px;
+    margin-bottom: 7px;
+    padding-bottom: 30px;
+  }
+
+  .featurearticle-img {
+    width: 100%;
+    height: auto;
+    min-height: 0;
+    border-radius: 5px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    //   padding-bottom: 15px;
+    margin-bottom: 20px;
+  }
+
+  .post-details {
+    padding-inline: 28px;
+    .post-details-day {
+      margin-bottom: 5px;
+      a {
+        text-decoration: none;
+        color: #000;
+        font-family: "Poppins", Arial, Helvetica, sans-serif;
+        font-size: 12px;
+        font-weight: 600;
+        line-height: 1.7;
+      }
+    }
+    .post-details-h6 {
+      a {
+        font-family: "Poppins", Arial, Helvetica, sans-serif;
+        text-decoration: none;
+        color: #000;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 1.4;
+      }
+    }
+    .post-details-p {
+      color: #222;
+      font-weight: lighter;
+      font-weight: 100;
+      font-size: 15px;
+      line-height: 1.7;
+      padding-block: 10px 0 19px;
+    }
+  }
+
+  .read-more {
+    a {
+      color: #222;
+      font-family: 'Poppins', Arial, Helvetica, sans-serif;
+      font-size: 15px;
+      line-height: 1.7;
+      text-decoration: none;
+      opacity: 0.5;
+    }
+  }
+}
+
+//Tablet
+@include media-breakpoint-up(md) {
+  .featurearticle-wrapper {
+    width: 100%;
+    height: auto;
+  }
+
+  .featurearticle-title {
+    padding-block: 30px;
+    text-align: center;
+    h2 {
+      color: #000;
+      font-family: "Poppins", Arial, Helvetica, sans-serif;
+      font-size: 36px;
+      font-weight: 700;
+      line-height: 1.3;
+      margin: 10px 0 0;
+    }
+    div {
+      color: #8d9199;
+      display: inline-block;
+      font-family: "Poppins", Arial, Helvetica, sans-serif;
+      font-size: 15px;
+      font-weight: 500;
+      line-height: 1.7;
+    }
+  }
+
+  .featurearticle-content-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    column-gap: 20px;
+  }
+
+  .featurearticle-content {
+    width: 31.45%;
+    height: 100%;
+    border: 1px solid #dce0e0;
+    border-radius: 5px;
+    margin-bottom: 30px;
+    padding-bottom: 30px;
+  }
+
+  .featurearticle-img {
+    width: 100%;
+    height: auto;
+    min-height: 0;
+    border-radius: 5px;
+    padding-bottom: 15px;
+    margin-bottom: 0;
+  }
+
+  .post-details {
+    padding-inline: 28px;
+    .post-details-day {
+      margin-bottom: 5px;
+      a {
+        text-decoration: none;
+        color: #000;
+        font-family: "Poppins", Arial, Helvetica, sans-serif;
+        font-size: 12px;
+        font-weight: 600;
+        line-height: 1.4;
+      }
+    }
+    .post-details-h6 {
+      a {
+        font-family: "Poppins", Arial, Helvetica, sans-serif;
+        text-decoration: none;
+        color: #000;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 1.4;
+      }
+    }
+    .post-details-p {
+      color: #222;
+      font-family: 'Work San', Arial, Helvetica, sans-serif;
+      font-size: 15px;
+      line-height: 1.7;
+      padding-block: 10px 0 19px;
+      font-weight: 100;
+    }
+  }
+
+  .read-more {
+    a {
+      color: #222;
+      font-family: 'Poppins', Arial, Helvetica, sans-serif;
+      font-size: 15px;
+      line-height: 1.7;
+      text-decoration: none;
+      opacity: 0.5;
+    }
+  }
+}
+//Laptop 1024px
+@include media-breakpoint-up(lg) {
+  .featurearticle-wrapper {
+    width: 100%;
+    height: auto;
+  }
+
+  .featurearticle-title {
+    padding-block: 30px;
+    text-align: center;
+    h2 {
+      color: #000;
+      font-family: "Poppins", Arial, Helvetica, sans-serif;
+      font-size: 36px;
+      font-weight: 700;
+      line-height: 1.3;
+      margin: 10px 0 0;
+    }
+    div {
+      color: #8d9199;
+      display: inline-block;
+      font-family: "Poppins", Arial, Helvetica, sans-serif;
+      font-size: 15px;
+      font-weight: 500;
+      line-height: 1.7;
+    }
+  }
+
+  .featurearticle-content-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    column-gap: 23px;
+  }
+
+  .featurearticle-content {
+    width: 31.6%;
+    height: 100%;
+    border: 1px solid #dce0e0;
+    border-radius: 5px;
+    margin-bottom: 30px;
+    padding-bottom: 30px;
+  }
+
+  .featurearticle-img {
+    width: 100%;
+    height: auto;
+    min-height: 0;
+    border-radius: 5px;
+    padding-bottom: 15px;
+    margin-bottom: 0;
+  }
+
+  .post-details {
+    padding-inline: 28px;
+    .post-details-day {
+      margin-bottom: 5px;
+      a {
+        text-decoration: none;
+        color: #000;
+        font-family: "Poppins", Arial, Helvetica, sans-serif;
+        font-size: 12px;
+        font-weight: 600;
+        line-height: 1.4;
+      }
+    }
+    .post-details-h6 {
+      a {
+        font-family: "Poppins", Arial, Helvetica, sans-serif;
+        text-decoration: none;
+        color: #000;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 1.4;
+      }
+    }
+    .post-details-p {
+      color: #222;
+      font-family: 'Work San', Arial, Helvetica, sans-serif;
+      font-size: 15px;
+      line-height: 1.7;
+      padding-block: 10px 0 19px;
+      font-weight: 100;
+    }
+  }
+
+  .read-more {
+    a {
+      color: #222;
+      font-family: 'Poppins', Arial, Helvetica, sans-serif;
+      font-size: 15px;
+      line-height: 1.7;
+      text-decoration: none;
+      opacity: 0.5;
+    }
+  }
+}
+
+// Laptop L 1440px
+@include media-breakpoint-up(xl) {
+  .featurearticle-wrapper {
+    width: 100%;
+    height: auto;
+  }
+
+  .featurearticle-title {
+    padding-block: 30px;
+    text-align: center;
+    h2 {
+      color: #000;
+      font-family: "Poppins", Arial, Helvetica, sans-serif;
+      font-size: 24px;
+      font-weight: 700;
+      line-height: 1.3;
+      margin: 10px 0 0;
+    }
+    div {
+      color: #8d9199;
+      display: inline-block;
+      font-family: "Poppins", Arial, Helvetica, sans-serif;
+      font-size: 15px;
+      font-weight: 500;
+      line-height: 1.7;
+    }
+  }
+
+  .featurearticle-content-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    column-gap: 31px;
+  }
+
+  .featurearticle-content {
+    width: 31.6%;
+    height: 100%;
+    border: 1px solid #dce0e0;
+    border-radius: 5px;
+    margin-bottom: 30px;
+  }
+
+  .featurearticle-img {
+    width: 100%;
+    height: auto;
+    min-height: 0;
+    border-radius: 5px;
+    padding-bottom: 15px;
+    margin-bottom: 0;
+  }
+
+  .post-details {
+  }
+
+  .read-more {
+  }
+}

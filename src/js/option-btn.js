@@ -1,4 +1,4 @@
-function myFunction() {
+function OptionBtn() {
   var more = document.getElementById("option-wrapper");
   var btnText = document.getElementById("myBtn");
 
@@ -18,4 +18,4 @@ function myFunction() {
   }
 
 }
-export default myFunction;
+export default OptionBtn;

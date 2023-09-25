@@ -1,7 +1,7 @@
 import React from "react";
 import "../styles/Option.scss";
 import "../js/option-btn.js";
-import myFunction from "../js/option-btn.js";
+import OptionBtn from "../js/option-btn.js";
 
 export default function Option() {
   return (
@@ -140,7 +140,7 @@ export default function Option() {
           </div>
         </div>
       </div>
-      <button className="btn" onClick={myFunction} id="myBtn">
+      <button className="btn" onClick={OptionBtn} id="myBtn">
         <a href="#" className="option-button">
           <ion-icon name="settings-outline"></ion-icon>
         </a>

@@ -1,0 +1,68 @@
+@import "node_modules/bootstrap/scss/functions";
+@import "node_modules/bootstrap/scss/variables";
+@import "node_modules/bootstrap/scss/mixins";
+
+@include media-breakpoint-down(md) {
+    .sidebar-menu {
+      display: none;
+      background-color: #E0E1E2;
+      padding: 35px 40px;
+      width: 270px;
+      position: fixed;
+      top: 0;
+      right: 0;
+      z-index: 30;
+    }
+  
+    .closeBtn {
+      background-color: #ff4a52;
+      color: #fff;
+      border: 0;
+      position: fixed;
+      top: 30px;
+      right: 30px;
+      border-radius: 250px;
+      width: 40px;
+      height: 40px;
+      padding: 0;
+      line-height: 2.6;
+      font-size: 16px;
+      box-shadow: 8px 8px -6px rgba(0, 0, 0, 0.15);
+      font-family: "Work Sans", Arial, Helvetica, sans-serif;
+    }
+  
+    .sidebar-menu-nav {
+    //   padding-top: 60px;
+    //   padding-left: 40px;
+    padding-block: 60px;
+    }
+    .sidebar-menu-item {
+      display: block;
+      text-align: left;
+      text-decoration: none;
+      font-family: "Poppins", Arial, Helvetica, sans-serif;
+      font-size: 24px;
+      font-weight: 700;
+      line-height: 2;
+      color: #000;
+    }
+  
+    .sidebar-menu-item:hover {
+      color: #ff4a52;
+    }
+  
+    .sidebar-img {
+    }
+    .SwissApls-tour {
+    }
+    .Tour-Info {
+    }
+    .FujiSan-tour {
+    }
+    .tour-price {
+    }
+    .mobile-social-media {
+    }
+  }
+  
+  

@@ -1,0 +1,18 @@
+@import "node_modules/bootstrap/scss/functions";
+@import "node_modules/bootstrap/scss/variables";
+@import "node_modules/bootstrap/scss/mixins";
+
+@include media-breakpoint-down(xl){
+img {
+    height: 225px;
+}
+}
+.bridge {
+    padding: 0;
+    margin: 0;
+}
+img {
+    height: 214px;
+    width: 100%;
+    object-fit: cover;
+}
