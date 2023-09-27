@@ -13,7 +13,7 @@ export default function Footer() {
               capital and largest city of the United Kingdom.
               <br></br>
               <img
-                id="footer-logo" style={{width:"63.3%"}}
+                id="footer-logo"
                 src="https://themes-themegoods.b-cdn.net/grandtour/demo/wp-content/uploads/2016/12/awards.png"
                 alt="logo-footer"
               />

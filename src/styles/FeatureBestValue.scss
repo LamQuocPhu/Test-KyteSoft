@@ -2,8 +2,13 @@
 @import "node_modules/bootstrap/scss/variables";
 @import "node_modules/bootstrap/scss/mixins";
 
+$color-white: #fff;
+$color-red: #ff4a52;
+$MainFont: "Poppins", Arial, Helvetica, sans-serif;
+$color-black: #000;
+
 .featureval-content:hover {
-  background: #fff;
+  background: $color-white;
   box-shadow: 0px 15px 26px #ccc;
   transition: all 0.2s ease-in;
   transform: translateY(-10px);
@@ -20,17 +25,18 @@
     padding-block: 30px;
     text-align: center;
     h2 {
-      color: #000;
-      font-family: "Poppins", Arial, Helvetica, sans-serif;
+      color: $color-black;
+      font-family: $MainFont;
       font-size: 24px;
       font-weight: 700;
       line-height: 1.3;
       margin: 10px 0 0;
     }
+    
     div {
       color: #8d9199;
       display: inline-block;
-      font-family: "Poppins", Arial, Helvetica, sans-serif;
+      font-family: $MainFont;
       font-size: 15px;
       font-weight: 500;
       line-height: 1.7;
@@ -61,7 +67,7 @@
       line-height: 1.7;
       font-weight: 600;
       padding: 10px 7px;
-      color: #fff;
+      color: $color-white;
     }
   }
 
@@ -78,33 +84,34 @@
     padding: 5px 15px 15px;
     position: relative;
     h4 {
-      font-family: "Poppins", Arial, Helvetica, sans-serif;
+      font-family: $MainFont;
       font-size: 20px;
       font-weight: 700;
       line-height: 0.5;
-      color: #000;
+      color: $color-black;
       margin-bottom: 0;
       letter-spacing: 0;
     }
+
     p {
       color: #222;
-      font-family: "Poppins", Arial, Helvetica, sans-serif;
+      font-family: $MainFont;
       font-size: 13px;
       line-height: 1.7;
       padding: 9px 0 17px;
       margin-bottom: 0;
-      font-weight: inherit;
+      font-weight: 300;
     }
   }
 
   .tour-price {
     padding: 3px 10px 2px;
-    color: #fff;
-    font-family: "Poppins", Arial, Helvetica, sans-serif;
+    color: $color-white;
+    font-family: $MainFont;
     font-size: 15px;
     font-weight: 700;
     line-height: 1.7;
-    background-color: #ff4a52;
+    background-color: $color-red;
     position: absolute;
     top: -57px;
     left: 0;
@@ -112,7 +119,8 @@
       text-decoration: line-through;
       opacity: 0.3;
       padding-right: 3px;
-      font-weight: 100;
+      font-weight: 200;
+      font-size: 13px;
     }
   }
 
@@ -160,7 +168,7 @@
 }
 
 //Tablet
-@include media-breakpoint-between(md,lg) {
+@include media-breakpoint-between(md, lg) {
   .featureval-wrapper {
     width: 100%;
     height: auto;
@@ -170,17 +178,18 @@
     padding-block: 30px;
     text-align: center;
     h2 {
-      color: #000;
-      font-family: "Poppins", Arial, Helvetica, sans-serif;
-      font-size: 24px;
+      color: $color-black;
+      font-family: $MainFont;
+      font-size: 36px;
       font-weight: 700;
       line-height: 1.3;
       margin: 10px 0 0;
     }
+
     div {
       color: #8d9199;
       display: inline-block;
-      font-family: "Poppins", Arial, Helvetica, sans-serif;
+      font-family: $MainFont;
       font-size: 15px;
       font-weight: 500;
       line-height: 1.7;
@@ -197,7 +206,7 @@
 
   .featureval-content {
     width: 30.5%;
-    height: auto;
+    height: 100%;
     border: 1px solid #dce0e0;
     border-radius: 5px;
     margin-bottom: 30px;
@@ -214,7 +223,7 @@
       line-height: 1.7;
       font-weight: 600;
       padding: 10px 7px;
-      color: #fff;
+      color: $color-white;
     }
   }
 
@@ -231,42 +240,43 @@
     padding: 5px 15px 15px;
     position: relative;
     h4 {
-
-      font-family: "Poppins", Arial, Helvetica, sans-serif;
+      font-family: $MainFont;
       font-size: 20px;
       font-weight: 700;
       line-height: 1.4;
-      color: #000;
+      color: $color-black;
       margin-bottom: 0;
       letter-spacing: 0;
     }
+
     p {
       color: #222;
-      font-family: "Poppins", Arial, Helvetica, sans-serif;
+      font-family: $MainFont;
       font-size: 13px;
       line-height: 1.7;
       padding: 9px 0 17px;
       margin-bottom: 0;
-      font-weight: inherit;
+      font-weight: 300;
     }
   }
 
   .tour-price {
     padding: 3px 10px 2px;
-    color: #fff;
-    font-family: "Poppins", Arial, Helvetica, sans-serif;
+    color: $color-white;
+    font-family: $MainFont;
     font-size: 15px;
     font-weight: 700;
     line-height: 1.7;
-    background-color: #ff4a52;
+    background-color: $color-red;
     position: absolute;
     top: -58px;
     left: 0;
     span {
       text-decoration: line-through;
-      opacity: 0.3;
+      opacity: 0.5;
       padding-right: 3px;
-      font-weight: 100;
+      font-weight: 300;
+      font-size: 13px;
     }
   }
 
@@ -289,6 +299,7 @@
     line-height: 1.7;
     font-weight: 600;
     margin-left: 2px;
+    margin-top: 5px;
   }
 
   .tour-attribute-rating-star {
@@ -296,8 +307,11 @@
     display: inline-block;
     color: #1ec7b6;
     font-size: 14px;
+    i {
+    padding-right: 3px;
+    }
   }
-  
+
   .tour-attribute-days {
     width: 50%;
     font-size: 12px;
@@ -313,6 +327,7 @@
     }
   }
 }
+
 //Laptop 1024px
 @include media-breakpoint-up(lg) {
   .featureval-wrapper {
@@ -324,20 +339,22 @@
     padding-block: 30px;
     text-align: center;
     h2 {
-      color: #000;
-      font-family: "Poppins", Arial, Helvetica, sans-serif;
+      color: $color-black;
+      font-family: $MainFont;
       font-size: 36px;
       font-weight: 700;
       line-height: 1.3;
-      margin: 10px 0 0;
+      margin: 30px 0 0;
     }
+
     div {
       color: #8d9199;
       display: inline-block;
-      font-family: "Poppins", Arial, Helvetica, sans-serif;
+      font-family: $MainFont;
       font-size: 15px;
       font-weight: 500;
       line-height: 1.7;
+      margin-bottom: 20px;
     }
   }
 
@@ -368,7 +385,7 @@
       line-height: 1.7;
       font-weight: 600;
       padding: 10px 7px;
-      color: #fff;
+      color: $color-white;
     }
   }
 
@@ -386,17 +403,18 @@
     padding: 10px 15px 15px;
     position: relative;
     h4 {
-      font-family: "Poppins", Arial, Helvetica, sans-serif;
+      font-family: $MainFont;
       font-size: 20px;
       font-weight: 700;
       line-height: 1.4;
-      color: #000;
+      color: $color-black;
       margin-bottom: 0;
       letter-spacing: 0;
     }
+
     p {
       color: #222;
-      font-family: "Poppins", Arial, Helvetica, sans-serif;
+      font-family: $MainFont;
       font-size: 13px;
       line-height: 1.7;
       padding: 9px 0 17px;
@@ -407,12 +425,12 @@
 
   .tour-price {
     padding: 3px 10px 2px;
-    color: #fff;
-    font-family: "Poppins", Arial, Helvetica, sans-serif;
+    color: $color-white;
+    font-family: $MainFont;
     font-size: 15px;
     font-weight: 700;
     line-height: 1.7;
-    background-color: #ff4a52;
+    background-color: $color-red;
     position: absolute;
     top: -42px;
     left: 0;
@@ -451,7 +469,6 @@
     font-size: 14px;
   }
 
-  
   .tour-attribute-days {
     width: 40%;
     font-size: 12px;
@@ -479,17 +496,18 @@
     padding-block: 30px;
     text-align: center;
     h2 {
-      color: #000;
-      font-family: "Poppins", Arial, Helvetica, sans-serif;
+      color: $color-black;
+      font-family: $MainFont;
       font-size: 36px;
       font-weight: 700;
       line-height: 1.3;
-      margin: 10px 0 0;
+      margin: 30px 0 0;
     }
+
     div {
       color: #8d9199;
       display: inline-block;
-      font-family: "Poppins", Arial, Helvetica, sans-serif;
+      font-family: $MainFont;
       font-size: 15px;
       font-weight: 500;
       line-height: 1.7;
@@ -523,7 +541,7 @@
       line-height: 1.7;
       font-weight: 600;
       padding: 10px 7px;
-      color: #fff;
+      color: $color-white;
     }
   }
 
@@ -541,17 +559,18 @@
     padding: 10px 15px 15px;
     position: relative;
     h4 {
-      font-family: "Poppins", Arial, Helvetica, sans-serif;
+      font-family: $MainFont;
       font-size: 20px;
       font-weight: 700;
       line-height: 1.4;
-      color: #000;
+      color: $color-black;
       margin-bottom: 0;
       letter-spacing: 0;
     }
+
     p {
       color: #222;
-      font-family: "Poppins", Arial, Helvetica, sans-serif;
+      font-family: $MainFont;
       font-size: 13px;
       line-height: 1.7;
       padding: 9px 0 17px;
@@ -562,12 +581,12 @@
 
   .tour-price {
     padding: 3px 10px 2px;
-    color: #fff;
-    font-family: "Poppins", Arial, Helvetica, sans-serif;
+    color: $color-white;
+    font-family: $MainFont;
     font-size: 15px;
     font-weight: 700;
     line-height: 1.7;
-    background-color: #ff4a52;
+    background-color: $color-red;
     position: absolute;
     top: -42px;
     left: 0;
@@ -605,7 +624,7 @@
     color: #1ec7b6;
     font-size: 14px;
   }
-  
+
   .tour-attribute-days {
     width: 50%;
     font-size: 12px;

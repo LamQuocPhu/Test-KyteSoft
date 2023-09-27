@@ -1,14 +1,12 @@
 import React, { useState, useEffect } from "react";
-import { FaArrowCircleUp, FaAngleUp } from "react-icons/fa";
 import "../styles/ScrollToTopBtn.scss";
-import { Button } from "bootstrap";
 
 export default function ScrollButton() {
   const [visible, setVisible] = useState(false);
 
   useEffect(() => {
     window.addEventListener("scroll", () => {
-      if (window.scrollY > 400) {
+      if (window.scrollY > 300) {
         setVisible(true);
       } else {
         setVisible(false);

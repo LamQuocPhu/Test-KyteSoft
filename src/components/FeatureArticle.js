@@ -14,7 +14,7 @@ export default function FeatureArticle() {
             <a href="#">
               <img
                 src="https://themes-themegoods.b-cdn.net/grandtour/demo/wp-content/uploads/2016/12/photo-1469920783271-4ee08a94d42d-960x636.jpg"
-                alt=""
+                alt="Memorial Day to Someone Told Me to Travel"
                 className="featurearticle-img"
               />
             </a>
@@ -66,7 +66,7 @@ export default function FeatureArticle() {
             <a href="#">
               <img
                 src="https://themes-themegoods.b-cdn.net/grandtour/demo/wp-content/uploads/2016/12/pexels-photo-24484-960x636.jpg"
-                alt=""
+                alt="Taking A Travel Blog Victory Lap"
                 className="featurearticle-img"
               />
             </a>

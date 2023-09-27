@@ -2,8 +2,13 @@
 @import "node_modules/bootstrap/scss/variables";
 @import "node_modules/bootstrap/scss/mixins";
 
+$color-white: #fff;
+$color-red: #ff4a52;
+$MainFont: "Poppins", Arial, Helvetica, sans-serif;
+$color-black: #000;
+
 .featurearticle-content:hover {
-  background: #fff;
+  background: $color-white;
   box-shadow: 0px 15px 26px #ccc;
   transform: translateY(-10px);
   transition: all 0.2s ease-in;
@@ -20,8 +25,8 @@
     padding-block: 30px;
     text-align: center;
     h2 {
-      color: #000;
-      font-family: "Poppins", Arial, Helvetica, sans-serif;
+      color: $color-black;
+      font-family: $MainFont;
       font-size: 24px;
       font-weight: 700;
       line-height: 1.3;
@@ -30,10 +35,11 @@
     div {
       color: #8d9199;
       display: inline-block;
-      font-family: "Poppins", Arial, Helvetica, sans-serif;
+      font-family: $MainFont;
       font-size: 15px;
       font-weight: 500;
       line-height: 1.7;
+      opacity: 0.8;
     }
   }
 
@@ -41,7 +47,7 @@
     display: flex;
     flex-wrap: wrap;
     width: 100%;
-    margin-bottom: 30px;
+    margin-bottom: 25px;
   }
 
   .featurearticle-content {
@@ -60,18 +66,20 @@
     border-radius: 5px;
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 0;
-    //   padding-bottom: 15px;
     margin-bottom: 20px;
   }
 
   .post-details {
-    padding-inline: 28px;
+    padding-inline: 29px;
+    p {
+      padding-block: 10.5px 19.5px;
+    }
     .post-details-day {
       margin-bottom: 5px;
       a {
         text-decoration: none;
-        color: #000;
-        font-family: "Poppins", Arial, Helvetica, sans-serif;
+        color: $color-black;
+        font-family: $MainFont;
         font-size: 12px;
         font-weight: 600;
         line-height: 1.7;
@@ -79,9 +87,9 @@
     }
     .post-details-h6 {
       a {
-        font-family: "Poppins", Arial, Helvetica, sans-serif;
+        font-family: $MainFont;
         text-decoration: none;
-        color: #000;
+        color: $color-black;
         font-weight: 700;
         font-size: 16px;
         line-height: 1.4;
@@ -89,15 +97,16 @@
     }
     .post-details-p {
       color: #222;
-      font-weight: lighter;
-      font-weight: 100;
       font-size: 15px;
       line-height: 1.7;
-      padding-block: 10px 0 19px;
+      font-family: "Work Sans", Arial, Helvetica, sans-serif;
+      font-weight: 400;
+      margin-bottom: 0;
     }
   }
 
   .read-more {
+    margin-top: 15px;
     a {
       color: #222;
       font-family: 'Poppins', Arial, Helvetica, sans-serif;
@@ -105,6 +114,7 @@
       line-height: 1.7;
       text-decoration: none;
       opacity: 0.5;
+      font-weight: 300;
     }
   }
 }
@@ -117,11 +127,11 @@
   }
 
   .featurearticle-title {
-    padding-block: 30px;
+    padding-block: 40px;
     text-align: center;
     h2 {
-      color: #000;
-      font-family: "Poppins", Arial, Helvetica, sans-serif;
+      color: $color-black;
+      font-family: $MainFont;
       font-size: 36px;
       font-weight: 700;
       line-height: 1.3;
@@ -130,7 +140,7 @@
     div {
       color: #8d9199;
       display: inline-block;
-      font-family: "Poppins", Arial, Helvetica, sans-serif;
+      font-family: $MainFont;
       font-size: 15px;
       font-weight: 500;
       line-height: 1.7;
@@ -142,6 +152,7 @@
     flex-wrap: wrap;
     width: 100%;
     column-gap: 20px;
+    margin-bottom: 20px;
   }
 
   .featurearticle-content {
@@ -149,8 +160,6 @@
     height: 100%;
     border: 1px solid #dce0e0;
     border-radius: 5px;
-    margin-bottom: 30px;
-    padding-bottom: 30px;
   }
 
   .featurearticle-img {
@@ -163,13 +172,16 @@
   }
 
   .post-details {
-    padding-inline: 28px;
+    padding-inline: 30px;
+    p {
+      padding-block: 10.5px 19.5px;
+    }
     .post-details-day {
       margin-bottom: 5px;
       a {
         text-decoration: none;
-        color: #000;
-        font-family: "Poppins", Arial, Helvetica, sans-serif;
+        color: $color-black;
+        font-family: $MainFont;
         font-size: 12px;
         font-weight: 600;
         line-height: 1.4;
@@ -177,9 +189,9 @@
     }
     .post-details-h6 {
       a {
-        font-family: "Poppins", Arial, Helvetica, sans-serif;
+        font-family: $MainFont;
         text-decoration: none;
-        color: #000;
+        color: $color-black;
         font-weight: 700;
         font-size: 18px;
         line-height: 1.4;
@@ -192,10 +204,13 @@
       line-height: 1.7;
       padding-block: 10px 0 19px;
       font-weight: 100;
+      margin-bottom: 0;
     }
   }
 
   .read-more {
+    padding-bottom: 30px;
+    margin-top: 15px;
     a {
       color: #222;
       font-family: 'Poppins', Arial, Helvetica, sans-serif;
@@ -203,6 +218,7 @@
       line-height: 1.7;
       text-decoration: none;
       opacity: 0.5;
+      font-weight: 300;
     }
   }
 }
@@ -214,11 +230,11 @@
   }
 
   .featurearticle-title {
-    padding-block: 30px;
+    padding-block: 60px 50px;
     text-align: center;
     h2 {
-      color: #000;
-      font-family: "Poppins", Arial, Helvetica, sans-serif;
+      color: $color-black;
+      font-family: $MainFont;
       font-size: 36px;
       font-weight: 700;
       line-height: 1.3;
@@ -227,7 +243,7 @@
     div {
       color: #8d9199;
       display: inline-block;
-      font-family: "Poppins", Arial, Helvetica, sans-serif;
+      font-family: $MainFont;
       font-size: 15px;
       font-weight: 500;
       line-height: 1.7;
@@ -239,6 +255,7 @@
     flex-wrap: wrap;
     width: 100%;
     column-gap: 23px;
+    margin-bottom: 70px;
   }
 
   .featurearticle-content {
@@ -246,8 +263,6 @@
     height: 100%;
     border: 1px solid #dce0e0;
     border-radius: 5px;
-    margin-bottom: 30px;
-    padding-bottom: 30px;
   }
 
   .featurearticle-img {
@@ -260,13 +275,14 @@
   }
 
   .post-details {
-    padding-inline: 28px;
+    padding-inline: 30px;
+    padding-block: 10.5px 30px;
     .post-details-day {
       margin-bottom: 5px;
       a {
         text-decoration: none;
-        color: #000;
-        font-family: "Poppins", Arial, Helvetica, sans-serif;
+        color: $color-black;
+        font-family: $MainFont;
         font-size: 12px;
         font-weight: 600;
         line-height: 1.4;
@@ -274,9 +290,9 @@
     }
     .post-details-h6 {
       a {
-        font-family: "Poppins", Arial, Helvetica, sans-serif;
+        font-family: $MainFont;
         text-decoration: none;
-        color: #000;
+        color: $color-black;
         font-weight: 700;
         font-size: 18px;
         line-height: 1.4;
@@ -286,20 +302,28 @@
       color: #222;
       font-family: 'Work San', Arial, Helvetica, sans-serif;
       font-size: 15px;
-      line-height: 1.7;
-      padding-block: 10px 0 19px;
+      line-height: 1.6;
       font-weight: 100;
     }
   }
 
   .read-more {
+    margin-top: 15px;
+    padding-bottom: 0;
     a {
       color: #222;
-      font-family: 'Poppins', Arial, Helvetica, sans-serif;
+      font-family: $MainFont;
       font-size: 15px;
       line-height: 1.7;
       text-decoration: none;
+      font-weight: 300;
       opacity: 0.5;
+      padding-right: 5px;
+    }
+    i {
+      padding-left: 5px;
+      font-size: 20px;
+      vertical-align: middle;
     }
   }
 }
@@ -312,12 +336,12 @@
   }
 
   .featurearticle-title {
-    padding-block: 30px;
+    padding-block: 70px 50px;
     text-align: center;
     h2 {
-      color: #000;
-      font-family: "Poppins", Arial, Helvetica, sans-serif;
-      font-size: 24px;
+      color: $color-black;
+      font-family: $MainFont;
+      font-size: 36px;
       font-weight: 700;
       line-height: 1.3;
       margin: 10px 0 0;
@@ -325,7 +349,7 @@
     div {
       color: #8d9199;
       display: inline-block;
-      font-family: "Poppins", Arial, Helvetica, sans-serif;
+      font-family: $MainFont;
       font-size: 15px;
       font-weight: 500;
       line-height: 1.7;
@@ -336,7 +360,8 @@
     display: flex;
     flex-wrap: wrap;
     width: 100%;
-    column-gap: 31px;
+    column-gap: 23px;
+    margin-bottom: 80px;
   }
 
   .featurearticle-content {
@@ -344,7 +369,6 @@
     height: 100%;
     border: 1px solid #dce0e0;
     border-radius: 5px;
-    margin-bottom: 30px;
   }
 
   .featurearticle-img {
@@ -357,8 +381,56 @@
   }
 
   .post-details {
+    padding-inline: 30px;
+    padding-block: 10.5px 30px;
+    .post-details-day {
+      margin-bottom: 5px;
+      a {
+        text-decoration: none;
+        color: $color-black;
+        font-family: $MainFont;
+        font-size: 12px;
+        font-weight: 600;
+        line-height: 1.4;
+      }
+    }
+    .post-details-h6 {
+      a {
+        font-family: $MainFont;
+        text-decoration: none;
+        color: $color-black;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 1.4;
+      }
+    }
+    .post-details-p {
+      color: #222;
+      font-family: 'Work San', Arial, Helvetica, sans-serif;
+      font-size: 15px;
+      line-height: 1.7;
+      font-weight: 100;
+      text-align: left;
+    }
   }
 
   .read-more {
+    margin-top: 15px;
+    padding-bottom: 0;
+    a {
+      color: #222;
+      font-family: $MainFont;
+      font-size: 15px;
+      line-height: 1.7;
+      text-decoration: none;
+      font-weight: 300;
+      opacity: 0.5;
+      padding-right: 5px;
+    }
+    i {
+      padding-left: 5px;
+      font-size: 20px;
+      vertical-align: middle;
+    }
   }
 }

@@ -6,7 +6,7 @@ export default function SidebarMenu(){
     return (
         <div className="sidebar-menu" id="sidebar">
               <button onClick={closeMobileNavBtn} id="closeMobileNavBtn" className="closeBtn">
-                <i className="fa fa-close"></i>
+              <i class="material-icons">clear</i>
               </button>
               <nav className="sidebar-menu-nav">
                     <a href="#" className="sidebar-menu-item">Home</a>
@@ -19,13 +19,13 @@ export default function SidebarMenu(){
                     <a href="#" className="sidebar-menu-item">Shop</a>
               </nav>
               <div className="sidebar-img">
-                    <div id="sidebar-img" className="SwissApls-tour">
+                    <div className="SwissApls-tour">
                       <img
                         src="https://themes-themegoods.b-cdn.net/grandtour/demo/wp-content/uploads/2016/12/pexels-photo-131729-700x466.jpeg"
-                        alt="Swiss Alps trips"
+                        alt="Swiss Alps trips" className="SwissAplsFujiSan-tour-img"
                       />
                       <div className="Tour-Info">
-                        <p>$3,900</p>
+                        <p className="sidebar-tour-price">$3,900</p>
                         <h5>Swiss Alps Trip</h5>
                         <span>
                           <i className="fa fa-star"></i>
@@ -36,13 +36,13 @@ export default function SidebarMenu(){
                         </span>
                       </div>
                     </div>
-                    <div id="sidebar-img" className="FujiSan-tour">
+                    <div className="FujiSan-tour">
                       <img
-                        src="https://themes-themegoods.b-cdn.net/grandtour/demo/wp-content/uploads/2016/12/pexels-photo-225630-700x466.jpeg"
-                        alt="Swiss Alps trips"
+                        src="https://themes-themegoods.b-cdn.net/grandtour/demo/wp-content/uploads/2016/12/pexels-photo-225630-700x466.jpeg" 
+                        alt="5 Lake of FujiSan" className="SwissAplsFujiSan-tour-img"
                       />
                       <div className="Tour-Info">
-                        <p className="tour-price">
+                        <p className="sidebar-tour-price">
                           <i>$4,900 </i>$4,200
                         </p>
                         <h5>5 Lake Of FujiSan</h5>

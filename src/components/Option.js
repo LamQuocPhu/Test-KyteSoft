@@ -140,10 +140,10 @@ export default function Option() {
           </div>
         </div>
       </div>
-      <button className="btn" onClick={OptionBtn} id="myBtn">
-        <a href="#" className="option-button">
+      <div className="option-menu" id="myBtn">
+        <button className="btn" onClick={OptionBtn} >
           <ion-icon name="settings-outline"></ion-icon>
-        </a>
+        </button>
         <a href="#" className="option-button">
           <ion-icon name="heart-outline"></ion-icon>
         </a>
@@ -153,7 +153,7 @@ export default function Option() {
         <a href="#" className="option-button">
           <ion-icon name="cart-outline"></ion-icon>
         </a>
-      </button>
+      </div>
     </section>
   );
 }

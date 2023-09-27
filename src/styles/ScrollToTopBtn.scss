@@ -8,12 +8,13 @@ $color-white: #fff;
   position: relative;
 }
 
+
 @include media-breakpoint-up(md){
   .icon-position {
     position: fixed;
     bottom: 20px;
-    right: 25px;
-    z-index: 20;
+    right: 10px;
+    z-index: 1;
   }
 }
 
@@ -21,7 +22,7 @@ $color-white: #fff;
   .icon-position {
     position: fixed;
     bottom: 20px;
-    right: 20px;
+    right: 10px;
     z-index: 20;
   }
 }

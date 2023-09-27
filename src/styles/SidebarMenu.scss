@@ -2,67 +2,403 @@
 @import "node_modules/bootstrap/scss/variables";
 @import "node_modules/bootstrap/scss/mixins";
 
+$color-white: #fff;
+$color-red: #ff4a52;
+$color-black: #000;
+$MainFont: "Poppins", Arial, Helvetica, sans-serif;
+
+.fa-star-o {
+  color: $color-white;
+}
+
 @include media-breakpoint-down(md) {
-    .sidebar-menu {
-      display: none;
-      background-color: #E0E1E2;
-      padding: 35px 40px;
-      width: 270px;
-      position: fixed;
-      top: 0;
-      right: 0;
-      z-index: 30;
-    }
-  
-    .closeBtn {
-      background-color: #ff4a52;
-      color: #fff;
-      border: 0;
-      position: fixed;
-      top: 30px;
-      right: 30px;
-      border-radius: 250px;
-      width: 40px;
-      height: 40px;
-      padding: 0;
-      line-height: 2.6;
-      font-size: 16px;
-      box-shadow: 8px 8px -6px rgba(0, 0, 0, 0.15);
-      font-family: "Work Sans", Arial, Helvetica, sans-serif;
-    }
-  
-    .sidebar-menu-nav {
-    //   padding-top: 60px;
-    //   padding-left: 40px;
-    padding-block: 60px;
-    }
-    .sidebar-menu-item {
-      display: block;
-      text-align: left;
-      text-decoration: none;
-      font-family: "Poppins", Arial, Helvetica, sans-serif;
-      font-size: 24px;
-      font-weight: 700;
-      line-height: 2;
-      color: #000;
-    }
-  
-    .sidebar-menu-item:hover {
-      color: #ff4a52;
-    }
-  
-    .sidebar-img {
-    }
-    .SwissApls-tour {
-    }
-    .Tour-Info {
-    }
-    .FujiSan-tour {
-    }
-    .tour-price {
-    }
-    .mobile-social-media {
+  .sidebar-menu {
+    display: none;
+    background-color: #DBDCDF;
+    padding: 35px 40px;
+    width: 270px;
+    height: 310px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 30;
+    overflow: scroll;
+  }
+
+  .closeBtn {
+    background-color: $color-red;
+    color: $color-white;
+    border: 0;
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    border-radius: 250px;
+    width: 44px;
+    height: 44px;
+    padding: 0;
+    line-height: 1;
+    box-shadow: 8px 8px -6px rgba(0, 0, 0, 0.15);
+    font-family: "Work Sans", Arial, Helvetica, sans-serif;
+
+    .material-icons {
+      font-size: 30px;
+      opacity: .8;
     }
   }
-  
-  
+
+  .sidebar-menu-nav {
+    padding-block: 60px;
+  }
+
+  .sidebar-menu-item {
+    display: block;
+    text-align: left;
+    text-decoration: none;
+    font-family: $MainFont;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 2;
+    color: $color-black;
+  }
+
+  .sidebar-menu-item:hover {
+    color: $color-red;
+  }
+
+  .SwissAplsFujiSan-tour-img {
+    border-radius: 5px;
+    width: 100%;
+    max-height: 200px;
+  }
+
+  .SwissApls-tour {
+    position: relative;
+    margin-bottom: 20px;
+  }
+
+  .FujiSan-tour {
+    position: relative;
+    margin-bottom: 80px;
+  }
+
+  .Tour-Info {
+    h5 {
+      position: absolute;
+      top: 135px;
+      left: 10px;
+      color: $color-white;
+      font-size: 18px;
+      font-weight: 700;
+      letter-spacing: 0;
+      font-family: $MainFont;
+    }
+
+    span {
+      font-size: 15px;
+      left: 10px;
+      top: 160px;
+      position: absolute;
+      color: #1ec8b6;
+      i {
+        padding-right: 2px;
+      }
+    }
+  }
+
+  .sidebar-tour-price {
+    padding: 3px 10px 2px;
+    color: $color-white;
+    font-family: $MainFont;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 1.7;
+    background-color: $color-red;
+    position: absolute;
+    top: 100px;
+    left: 0;
+    i {
+      text-decoration: line-through;
+      color: $color-white;
+      font-weight: lighter;
+      font-size: 13px;
+      opacity: 0.5;
+      font-style: normal;
+    }
+  }
+  .mobile-social-media {
+    margin: 20px 0 0 0;
+    padding: 0;
+    background-color: #dfe2e5;
+    li {
+      font-size: 24px;
+      line-height: 1;
+      color: $color-black;
+      width: 24px;
+      height: 24px;
+    }
+
+    a {
+      margin-right: 14px;
+    }
+  }
+}
+
+@include media-breakpoint-up(md) {
+  .sidebar-menu {
+    display: none;
+    background-color: #DBDCDF;
+    padding: 35px 40px;
+    width: 47%;
+    height: 310px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 30;
+    overflow: scroll;
+  }
+
+  .closeBtn {
+    background-color: $color-red;
+    color: $color-white;
+    border: 0;
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    border-radius: 250px;
+    width: 44px;
+    height: 44px;
+    padding: 0;
+    line-height: 1;
+    box-shadow: 8px 8px -6px rgba(0, 0, 0, 0.15);
+    font-family: "Work Sans", Arial, Helvetica, sans-serif;
+    .material-icons {
+      font-size: 30px;
+      opacity: .8;
+    }
+  }
+
+  .sidebar-menu-nav {
+    padding-block: 60px;
+  }
+
+  .sidebar-menu-item {
+    display: block;
+    text-align: left;
+    text-decoration: none;
+    font-family: $MainFont;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 2;
+    color: $color-black;
+  }
+
+  .sidebar-menu-item:hover {
+    color: $color-red;
+  }
+
+  .SwissAplsFujiSan-tour-img {
+    border-radius: 5px;
+    width: 100%;
+    max-height: 200px;
+  }
+
+  .SwissApls-tour {
+    position: relative;
+    margin-bottom: 20px;
+  }
+
+  .FujiSan-tour {
+    position: relative;
+    margin-bottom: 80px;
+  }
+
+  .Tour-Info {
+    h5 {
+      position: absolute;
+      top: 135px;
+      left: 10px;
+      color: $color-white;
+      font-size: 18px;
+      font-weight: 700;
+      letter-spacing: 0;
+      font-family: $MainFont;
+    }
+
+    span {
+      font-size: 15px;
+      left: 10px;
+      top: 160px;
+      position: absolute;
+      color: #1ec8b6;
+      i {
+        padding-right: 2px;
+      }
+    }
+  }
+
+  .sidebar-tour-price {
+    padding: 3px 10px 2px;
+    color: $color-white;
+    font-family: $MainFont;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 1.7;
+    background-color: $color-red;
+    position: absolute;
+    top: 100px;
+    left: 0;
+    i {
+      text-decoration: line-through;
+      color: $color-white;
+      font-weight: lighter;
+      font-size: 13px;
+      opacity: 0.5;
+      font-style: normal;
+    }
+  }
+  .mobile-social-media {
+    margin: 20px 0 0 0;
+    padding: 0;
+    li {
+      font-size: 24px;
+      line-height: 1;
+      color: $color-black;
+      width: 24px;
+      height: 24px;
+    }
+
+    a {
+      margin-right: 15px;
+    }
+  }
+}
+
+@include media-breakpoint-up(lg) {
+  .sidebar-menu {
+    display: none;
+    background-color: #DBDCDF;
+    padding: 35px 40px 55px 40px;
+    width: 360px;
+    height: 327px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 30;
+    overflow: scroll;
+  }
+
+  .closeBtn {
+    background-color: $color-red;
+    color: $color-white;
+    border: 0;
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    border-radius: 250px;
+    width: 44px;
+    height: 44px;
+    padding: 0;
+    line-height: 1;
+    box-shadow: 8px 8px -6px rgba(0, 0, 0, 0.15);
+    font-family: "Work Sans", Arial, Helvetica, sans-serif;
+    .material-icons {
+      font-size: 30px;
+      opacity: .8;
+    }
+  }
+
+  .sidebar-menu-nav {
+    padding-block: 60px;
+  }
+
+  .sidebar-menu-item {
+    display: block;
+    text-align: left;
+    text-decoration: none;
+    font-family: $MainFont;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 2;
+    color: $color-black;
+  }
+
+  .sidebar-menu-item:hover {
+    color: $color-red;
+  }
+
+  .SwissAplsFujiSan-tour-img {
+    border-radius: 5px;
+    width: 100%;
+    max-height: 200px;
+  }
+  .SwissApls-tour {
+    position: relative;
+    margin-bottom: 20px;
+  }
+
+  .FujiSan-tour {
+    position: relative;
+    margin-bottom: 50px;
+  }
+
+  .Tour-Info {
+    h5 {
+      position: absolute;
+      top: 135px;
+      left: 10px;
+      color: $color-white;
+      font-size: 18px;
+      font-weight: 700;
+      letter-spacing: 0;
+      font-family: $MainFont;
+    }
+
+    span {
+      font-size: 15px;
+      left: 10px;
+      top: 160px;
+      position: absolute;
+      color: #1ec8b6;
+      i {
+        padding-right: 2px;
+      }
+    }
+  }
+
+  .sidebar-tour-price {
+    padding: 3px 10px 2px;
+    color: $color-white;
+    font-family: $MainFont;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 1.7;
+    background-color: $color-red;
+    position: absolute;
+    top: 100px;
+    left: 0;
+    i {
+      text-decoration: line-through;
+      color: $color-white;
+      font-weight: lighter;
+      font-size: 13px;
+      opacity: 0.5;
+      font-style: normal;
+    }
+  }
+
+  .mobile-social-media {
+    margin: 20px 0 0 0;
+    padding: 0;
+    li {
+      font-size: 24px;
+      line-height: 1;
+      color: $color-black;
+      width: 24px;
+      height: 24px;
+    }
+
+    a {
+      margin-right: 15px;
+    }
+  }
+}

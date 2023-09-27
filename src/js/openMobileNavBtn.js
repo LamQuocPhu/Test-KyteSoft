@@ -6,7 +6,6 @@ function openMobileNavBtn() {
   if (openMobileNavBtn.click) {
     sidebar.style.display = "block";
     overlay.style.filter = "blur(20px)";
-
   }
 }
 
