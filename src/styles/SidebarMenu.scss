@@ -17,12 +17,21 @@ $MainFont: "Poppins", Arial, Helvetica, sans-serif;
     background-color: #DBDCDF;
     padding: 35px 40px;
     width: 270px;
-    height: 310px;
+    // height: 320px;
+    height: 100%;
     position: fixed;
     top: 0;
     right: 0;
-    z-index: 30;
+    z-index: 100;
     overflow: scroll;
+  }
+  .close-mobile-menu {
+    width: calc(100% - 270px);
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
   }
 
   .closeBtn {
@@ -149,12 +158,22 @@ $MainFont: "Poppins", Arial, Helvetica, sans-serif;
     background-color: #DBDCDF;
     padding: 35px 40px;
     width: 47%;
-    height: 310px;
+    // height: 310px;
+    height: 100%;
     position: fixed;
     top: 0;
     right: 0;
     z-index: 30;
     overflow: scroll;
+  }
+
+  .close-mobile-menu {
+    width: 53%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
   }
 
   .closeBtn {
@@ -279,12 +298,162 @@ $MainFont: "Poppins", Arial, Helvetica, sans-serif;
     background-color: #DBDCDF;
     padding: 35px 40px 55px 40px;
     width: 360px;
-    height: 327px;
+    // height: 327px;
+    height: 100%;
     position: fixed;
     top: 0;
     right: 0;
     z-index: 30;
     overflow: scroll;
+  }
+
+  .close-mobile-menu {
+    width: calc(100% - 360px);
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+
+  .closeBtn {
+    background-color: $color-red;
+    color: $color-white;
+    border: 0;
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    border-radius: 250px;
+    width: 44px;
+    height: 44px;
+    padding: 0;
+    line-height: 1;
+    box-shadow: 8px 8px -6px rgba(0, 0, 0, 0.15);
+    font-family: "Work Sans", Arial, Helvetica, sans-serif;
+    .material-icons {
+      font-size: 30px;
+      opacity: .8;
+    }
+  }
+
+  .sidebar-menu-nav {
+    padding-block: 60px;
+  }
+
+  .sidebar-menu-item {
+    display: block;
+    text-align: left;
+    text-decoration: none;
+    font-family: $MainFont;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 2;
+    color: $color-black;
+  }
+
+  .sidebar-menu-item:hover {
+    color: $color-red;
+  }
+
+  .SwissAplsFujiSan-tour-img {
+    border-radius: 5px;
+    width: 100%;
+    max-height: 200px;
+  }
+  .SwissApls-tour {
+    position: relative;
+    margin-bottom: 20px;
+  }
+
+  .FujiSan-tour {
+    position: relative;
+    margin-bottom: 50px;
+  }
+
+  .Tour-Info {
+    h5 {
+      position: absolute;
+      top: 135px;
+      left: 10px;
+      color: $color-white;
+      font-size: 18px;
+      font-weight: 700;
+      letter-spacing: 0;
+      font-family: $MainFont;
+    }
+
+    span {
+      font-size: 15px;
+      left: 10px;
+      top: 160px;
+      position: absolute;
+      color: #1ec8b6;
+      i {
+        padding-right: 2px;
+      }
+    }
+  }
+
+  .sidebar-tour-price {
+    padding: 3px 10px 2px;
+    color: $color-white;
+    font-family: $MainFont;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 1.7;
+    background-color: $color-red;
+    position: absolute;
+    top: 100px;
+    left: 0;
+    i {
+      text-decoration: line-through;
+      color: $color-white;
+      font-weight: lighter;
+      font-size: 13px;
+      opacity: 0.5;
+      font-style: normal;
+    }
+  }
+
+  .mobile-social-media {
+    margin: 20px 0 0 0;
+    padding: 0;
+    li {
+      font-size: 24px;
+      line-height: 1;
+      color: $color-black;
+      width: 24px;
+      height: 24px;
+    }
+
+    a {
+      margin-right: 15px;
+    }
+  }
+}
+
+@include media-breakpoint-up(xl) {
+  .sidebar-menu {
+    display: none;
+    background-color: #DBDCDF;
+    padding: 35px 40px 55px 40px;
+    width: 360px;
+    // height: 327px;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 30;
+    overflow: scroll;
+  }
+
+  .close-mobile-menu {
+    width: calc(100% - 360px);
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
   }
 
   .closeBtn {

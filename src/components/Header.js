@@ -1,9 +1,10 @@
 import React from "react";
 import "../styles/Header.scss";
 import videobg from "../videos/videobg.mp4";
-import openMobileNavBtn from "../js/openMobileNavBtn";
+// import openMobileNavBtn from "../js/openMobileNavBtn";
 
-export default function Header() {
+export default function Header(props) {
+  const { title, subtitle } = props;
   return (
     <section>
       <video className="videobg" src={videobg} autoPlay muted loop></video>
@@ -12,31 +13,18 @@ export default function Header() {
           <div className="inner-content">
             <div className="standard-wrapper">
               <h2 className="standard-wrapper-title">
-                Where do you want to go?
+                {title}
               </h2>
               <div className="standard-wrapper-tagline">
-                Trips, experiences, and places. All in one service.
+                {subtitle}
               </div>
               <div className="tour-search">
-                <div
-                  id="advance-search-positive"
-                  className="tour-search-wrapper"
-                >
+                <div id="advance-search-positive" className="tour-search-wrapper">
                   <div className="tour-search-wrapper-item">
-                    <input
-                      className="input-inner"
-                      type="text"
-                      placeholder="Destination, city"
-                    />
-                    <i
-                      id="destination-search"
-                      className="fa fa-search tour-search-icon"
-                    ></i>
+                    <input className="input-inner" type="text" placeholder="Destination, city"/>
+                    <i id="destination-search" className="fa fa-search tour-search-icon"></i>
                   </div>
-                  <div
-                    id="calendar-relative"
-                    className="tour-search-wrapper-item"
-                  >
+                  <div id="calendar-relative" className="tour-search-wrapper-item">
                     <select id="month" name="month">
                       <option>Any Month</option>
                       <option value="january">January</option>
@@ -57,10 +45,7 @@ export default function Header() {
                       className="fa fa-calendar-o tour-search-icon"
                     ></i>
                   </div>
-                  <div
-                    className="tour-search-wrapper-item"
-                    id="sortbyday-relative"
-                  >
+                  <div className="tour-search-wrapper-item" id="sortbyday-relative">
                     <select id="sort-by" name="montsort-byh">
                       <option value="date">Sort By Date</option>
                       <option value="price_low">Price Low to High</option>
@@ -75,11 +60,7 @@ export default function Header() {
                     ></i>
                   </div>
                   <div className="tour-search-wrapper-item">
-                    <input
-                      className="search-btn"
-                      type="submit"
-                      value="Search"
-                    />
+                    <input className="search-btn" type="submit" value="Search"/>
                   </div>
                 </div>
                 <div className="tour-search-advance">

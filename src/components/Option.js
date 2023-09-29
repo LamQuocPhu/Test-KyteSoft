@@ -1,12 +1,13 @@
 import React from "react";
 import "../styles/Option.scss";
-import "../js/option-btn.js";
-import OptionBtn from "../js/option-btn.js";
+import "../js/openOptionBtn.js";
+import openOptionBtn from "../js/openOptionBtn.js";
+import closeOptionBtn from '../js/closeOptionBtn';
 
-export default function Option() {
+export default function Option(props) {
   return (
     <section>
-      <div id="option-wrapper" className="open">
+      <div id="option-wrapper" className="open  ">
         <div className="inner">
           <div className="inner-content">
             <h6 className="inner-content-title">Created With Grand Tour</h6>
@@ -141,7 +142,10 @@ export default function Option() {
         </div>
       </div>
       <div className="option-menu" id="myBtn">
-        <button className="btn" onClick={OptionBtn} >
+        <button id="openbtn" onClick={openOptionBtn} >
+          <ion-icon name="settings-outline"></ion-icon>
+        </button>
+        <button id="closebtn" onClick={closeOptionBtn} >
           <ion-icon name="settings-outline"></ion-icon>
         </button>
         <a href="#" className="option-button">

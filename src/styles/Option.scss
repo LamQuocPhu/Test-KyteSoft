@@ -14,7 +14,7 @@ $color-black: #000;
 }
 @include media-breakpoint-up(md) {
   #option-wrapper {
-    display: none;
+    // display: none;
   }
   // circle color
   .circle {
@@ -26,7 +26,8 @@ $color-black: #000;
 
   .open {
     text-align: center;
-    transform: translate(0, 0);
+    transform: translate(351px, 0);
+    transition: transform 0.6s ease;
     position: fixed;
     top: 0;
     right: 0;
@@ -38,7 +39,6 @@ $color-black: #000;
     color: #222;
     line-height: 1.5;
     font-size: 14px;
-    // margin-bottom: 100px;
     background-color: $color-white;
     ul {
       list-style: none;
@@ -99,16 +99,30 @@ $color-black: #000;
   }
   // mybtn
 
-  .option-menu {
-    border: 0;
+  #openbtn {
     display: block;
+    padding: 0;
+    border: 0;
+    padding-left: 12px;
+    background-color: $color-white;
+  }
+
+  #closebtn {
+    display: none;
+    padding: 0;
+    border: 0;
+    padding-left: 12px;
+    background-color: $color-white;
+  }
+
+  .option-menu {
     color: #222;
     position: fixed;
     top: 150px;
-    right: 0px;
+    right: -2px;
     cursor: pointer;
     z-index: 9;
-    background: #fbfbfb;
+    background: $color-white;
     border-right: 0;
     width: 40px;
     height: 145px;
@@ -117,9 +131,8 @@ $color-black: #000;
     border-radius: 5px 0 0 5px;
     box-shadow: 0 3px 15px rgba(0, 0, 0, 0.1);
     line-height: 1.4;
-    button{
-      padding: 0;
-    }
+    transform: translate(0,0);
+    transition: transform 0.6s ease;
     a {
       color: $color-black;
       display: block;

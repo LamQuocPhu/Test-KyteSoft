@@ -109,12 +109,12 @@ $color-black: #000;
     margin-top: 15px;
     a {
       color: #222;
-      font-family: 'Poppins', Arial, Helvetica, sans-serif;
+      font-family: $MainFont;
       font-size: 15px;
       line-height: 1.7;
       text-decoration: none;
-      opacity: 0.5;
-      font-weight: 300;
+      opacity: 0.4;
+      font-weight: 400;
     }
   }
 }

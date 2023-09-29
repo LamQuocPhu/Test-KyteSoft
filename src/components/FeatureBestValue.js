@@ -1,13 +1,15 @@
 import React from "react";
 import '../styles/FeatureBestValue.scss'
 
-export default function FeatureBestValue() {
+export default function FeatureBestValue(props) {
+  const {title, subtitle} = props;
+
   return (
     <section>
       <div className="featureval-wrapper">
         <div className="featureval-title">
-          <h2>Best Value Trips</h2>
-          <div>Best offers trips from us</div>
+          <h2>{title}</h2>
+          <div>{subtitle}</div>
         </div>
         <div className="featureval-content-wrapper">
           <div className="featureval-content">

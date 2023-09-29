@@ -1,13 +1,14 @@
 import React from "react";
 import "../styles/FeaturePoppular.scss";
 
-export default function FeaturePoppular() {
+export default function FeaturePoppular(props) {
+  const {title, subtitle} = props;
   return (
     <section>
       <div className="featurepop-wrapper">
         <div className="featurepop-title">
-          <h2>Popular Destinations</h2>
-          <div>World's best tourist destinations</div>
+          <h2>{title}</h2>
+          <div>{subtitle}</div>
         </div>
         <div className="featurepop-content-wrapper">
           <div className="featurepop-content">

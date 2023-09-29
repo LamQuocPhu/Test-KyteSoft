@@ -1,13 +1,14 @@
 import React from "react";
 import "../styles/FeatureArticle.scss";
 
-export default function FeatureArticle() {
+export default function FeatureArticle(props) {
+  const {title, subtitle} = props;
   return (
     <section>
       <div className="featurearticle-wrapper">
         <div className="featurearticle-title">
-          <h2>Articles & Tips</h2>
-          <div>Explore some of the best tips from around the world</div>
+          <h2>{title}</h2>
+          <div>{subtitle}</div>
         </div>
         <div className="featurearticle-content-wrapper">
           <div className="featurearticle-content">

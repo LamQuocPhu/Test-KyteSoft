@@ -2,11 +2,13 @@ import React from "react";
 import "../styles/SidebarMenu.scss";
 import closeMobileNavBtn from "../js/closeMobileNavBtn";
 
-export default function SidebarMenu(){
+export default function SidebarMenu(props){
     return (
+      <section>
         <div className="sidebar-menu" id="sidebar">
+              <a className="close-mobile-menu" id="closemobile" onClick={closeMobileNavBtn}></a>
               <button onClick={closeMobileNavBtn} id="closeMobileNavBtn" className="closeBtn">
-              <i class="material-icons">clear</i>
+                <i className="material-icons">clear</i>
               </button>
               <nav className="sidebar-menu-nav">
                     <a href="#" className="sidebar-menu-item">Home</a>
@@ -74,5 +76,6 @@ export default function SidebarMenu(){
                 </a>
               </ul>
         </div>
+        </section>
     )
 }

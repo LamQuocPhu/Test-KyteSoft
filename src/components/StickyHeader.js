@@ -2,9 +2,9 @@ import React, { useEffect, useState, useCallback } from "react";
 import openMobileNavBtn from "../js/openMobileNavBtn";
 import "../styles/Header.scss";
 
-export default function StickyHeader() {
+export default function StickyHeader(props) {
   // const [backgroundColorChange, setBackgroundColorChange] = useState("transparent");
-  const [imageChange, setImageChange] = useState("images/logo.png");
+  const [imageChange, setImageChange] = useState("https://themes-themegoods.b-cdn.net/grandtour/demo/wp-content/themes/grandtour/images/logo@2x_white.png");
   // const [iconColorChange, setIconColorChange] = useState("#fff");
   // const [headerNavColorChange, setHeaderNavColorChange] = useState("#fff");
 
@@ -62,7 +62,7 @@ export default function StickyHeader() {
         // setHeaderNavColorChange("#000");
       } else {
         // setBackgroundColorChange("transparent");
-        setImageChange("images/logo.png");
+        setImageChange("https://themes-themegoods.b-cdn.net/grandtour/demo/wp-content/themes/grandtour/images/logo@2x_white.png");
         // setIconColorChange("#fff");
         // setHeaderNavColorChange("#fff");
       }

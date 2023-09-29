@@ -1,13 +1,15 @@
 import React from "react";
 import '../styles/FeatureWhyChooseUs.scss'
 
-export default function FeatureWhyChooseUs() {
+export default function FeatureWhyChooseUs(props) {
+  const {title, subtitle} = props;
+
   return (
     <section>
       <div className="feature-wrapper">
         <div className="feature-title">
-          <h2>Why Choose Us</h2>
-          <div>Here are reasons you should plan trip with us</div>
+          <h2>{title}</h2>
+          <div>{subtitle}</div>
         </div>
         <div className="feature-content-wrapper">
           <div className="feature-content">
