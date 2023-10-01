@@ -2,17 +2,24 @@
 @import "node_modules/bootstrap/scss/variables";
 @import "node_modules/bootstrap/scss/mixins";
 
-@include media-breakpoint-down(xl){
-img {
-    height: 225px;
-}
-}
 .bridge {
-    padding: 0;
-    margin: 0;
+  padding: 0;
+  margin: 0;
 }
+
 img {
-    height: 214px;
-    width: 100%;
-    object-fit: cover;
+  width: 100%;
+  object-fit: cover;
+}
+
+@include media-breakpoint-up(xl) {
+  img {
+    height: 406px;
+  }
+}
+
+@include media-breakpoint-down(xl) {
+  img {
+    max-height: 185.4px;
+  }
 }
