@@ -15,7 +15,7 @@ export default function FeatureWhyChooseUs(props) {
               <div className="feature-content">
                 <img
                   src={e.imgsrc}
-                  alt="Handpicked Hotels"
+                  alt={e.imgalt}
                   className="feature-img"
                 />
                 <h4>

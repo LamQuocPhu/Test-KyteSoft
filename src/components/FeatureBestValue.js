@@ -12,11 +12,11 @@ export default function FeatureBestValue(props) {
         <div className="featureval-content-wrapper">
           {BestValue.map((e) => {
             return (
-              <div className="featureval-content">
+              <div className="featureval-content" >
                 <a href="#">
                   <img
                     src={e.imgsrc}
-                    alt="Best Value"
+                    alt={e.imgalt}
                     className="featureval-img"
                   />
                 </a>

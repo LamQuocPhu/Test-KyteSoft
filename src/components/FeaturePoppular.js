@@ -14,7 +14,7 @@ export default function FeaturePoppular(props) {
             return (
               <div className="featurepop-content">
                 <a href="#">
-                  <img src={item.imgsrc} alt="Tokyo" className="featurepop-img" />
+                  <img src={item.imgsrc} alt={item.imgalt} className="featurepop-img" />
                 </a>
                 <h3>{item.imgtitle}</h3>
               </div>

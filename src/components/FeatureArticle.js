@@ -14,8 +14,8 @@ export default function FeatureArticle(props) {
               <div className="featurearticle-content">
                 <a href="#">
                   <img
-                    src={item.src}
-                    alt="Memorial Day to Someone Told Me to Travel"
+                    src={item.imgsrc}
+                    alt={item.imgalt}
                     className="featurearticle-img"
                   />
                 </a>
