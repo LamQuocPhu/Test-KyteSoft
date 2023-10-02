@@ -1,7 +1,7 @@
 import React from "react";
 
 export default function Title(props) {
-  const { info} = props;
+  const { info } = props;
   
   return (
     <>
